@@ -1,0 +1,43 @@
+import urllib, urllib2, json, sys, os.path, getpass
+
+def getToken(host, port, user) :
+    ltoken = os.path.normpath(os.path.expanduser("~/.klocwork/ltoken"))
+    ltokenFile = open(ltoken, 'r')
+    for r in ltokenFile :
+        rd = r.strip().split(';')
+        if rd[0] == host and rd[1] == str(port) and rd[2] == user :
+            ltokenFile.close()
+            return rd[3]
+    ltokenFile.close()
+
+class Metric(object) :
+    def __init__(self, attrs) :
+        self.file = attrs["filePath"]
+        self.entity = attrs["entity"]
+        self.tag = attrs["tag"]
+        self.value = attrs["metricValue"]
+
+    def __str__(self) :
+        return "%s;%s;%s;%d" % (self.file, self.entity, self.tag, self.value)
+
+def from_json(json_object) :
+    if 'filePath' in json_object :
+        return Metric(json_object)
+    return json_object
+
+host = "localhost"
+port = 8080
+user = getpass.getuser()
+project = str(sys.argv[1])
+url = "http://%s:%d/review/api" % (host, port)
+values = {"project": project, "user": user, "action": "metrics"}
+loginToken = getToken(host, port, user)
+if loginToken is not None :
+    values["ltoken"] = loginToken
+values["query"] = "metric:+CYCLOMATIC"
+
+data = urllib.urlencode(values)
+req = urllib2.Request(url, data)
+response = urllib2.urlopen(req)
+for record in response :
+    print json.loads(record, object_hook=from_json)
