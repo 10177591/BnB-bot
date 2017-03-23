@@ -1,0 +1,9 @@
+{
+    "product" : "location",
+    "logtype" : "daily_ta",
+    "server" : "192.168.121.120",
+    "port" : "22",
+    "username" : "mluser",
+    "password" : "mluser123",
+    "data_dir" : "/data/logs"
+}
