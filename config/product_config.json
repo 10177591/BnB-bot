@@ -5,5 +5,7 @@
     "port" : "22",
     "username" : "mluser",
     "password" : "mluser123",
-    "data_dir" : "/data/logs"
+    "src_dir" : "/data/logs",
+    "dst_dir" : "../data/",
+    "protocol" : "scp"
 }
