@@ -1,0 +1,40 @@
+#
+#
+# Nokia Copyright...
+############################################################
+
+import pandas as pd
+import re
+import os.path
+from glob import glob
+from tensorflow.python.platform import gfile
+
+def get_file_list(log_dir):
+
+    extensions = ['log','LOG']
+    file_list = []
+
+    for extension in extensions:
+        file_glob = os.path.join(log_dir, '*.' + extension + '*' )
+        file_list.extend(gfile.Glob(file_glob))
+    return file_list
+
+def log2_dataframe(file_list, tid_list):
+    log_df = pd.DataFrame(columns=['log'])
+    count = 0
+    for file in file_list:
+        print file
+        with open (file) as f:
+            each_log = ''
+            log_dict = {}
+            for each_line in f:
+                if re.search(r' \[TID#16083\] ', each_line):
+                    each_log = each_log + each_line
+            log_df.loc[count] = [each_log]
+            count = count+1
+    print ('%s'  %(log_df.loc[0].str.len()))
+    return log_df
+
+tid_list = ['16083', '16081']
+file_list = get_file_list('../tmp')
+log2_dataframe(file_list, tid_list)

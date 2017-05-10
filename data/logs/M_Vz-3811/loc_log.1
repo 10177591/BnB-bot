@@ -1,0 +1,447 @@
+2017-05-04 11:42:32.660 [TID#3359] [Debug] Message with length 41 is writing into [tSUPLInterface]
+2017-05-04 11:42:32.660 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 41
+2017-05-04 11:42:32.661 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 11:42:32.661 [TID#3357] [Debug] Recv LG msgType(100C) MsgID: Session:0
+2017-05-04 11:42:32.661 [TID#3357] [Debug] Got message from SPU, type: 0x100c
+2017-05-04 11:42:38.167 [TID#3354] [Debug] Message with length 28 is writing into [tMLEInterface]
+2017-05-04 11:42:38.167 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 28
+2017-05-04 11:42:38.168 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 11:42:38.168 [TID#3351] [Debug] receive mle link check response message. type: 0x1037
+2017-05-04 11:42:38.491 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 11:42:38.491 [TID#3349] [Debug] Recv LG msgType(100B) MsgID: Session:0
+2017-05-04 11:42:38.491 [TID#3349] [Debug] receive glc link check request message. type: 0x100b
+2017-05-04 11:42:38.491 [TID#3349] [Debug] Message with length 41 is writing into [tGLCInterface]
+2017-05-04 11:42:38.491 [TID#3349] [Debug] [tGLCInterface]: LinkCheckRequest has been processed!
+2017-05-04 11:42:38.492 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 41
+2017-05-04 11:42:38.661 [TID#3359] [Debug] Message with length 41 is writing into [tSUPLInterface]
+2017-05-04 11:42:38.661 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 41
+2017-05-04 11:42:38.661 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 11:42:38.661 [TID#3357] [Debug] Recv LG msgType(100C) MsgID: Session:0
+2017-05-04 11:42:38.661 [TID#3357] [Debug] Got message from SPU, type: 0x100c
+2017-05-04 11:42:44.168 [TID#3354] [Debug] Message with length 28 is writing into [tMLEInterface]
+2017-05-04 11:42:44.168 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 28
+2017-05-04 11:42:44.169 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 11:42:44.169 [TID#3351] [Debug] receive mle link check response message. type: 0x1037
+2017-05-04 11:42:44.662 [TID#3359] [Debug] Message with length 41 is writing into [tSUPLInterface]
+2017-05-04 11:42:44.662 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 41
+2017-05-04 11:42:44.662 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 11:42:44.662 [TID#3357] [Debug] Recv LG msgType(100C) MsgID: Session:0
+2017-05-04 11:42:44.662 [TID#3357] [Debug] Got message from SPU, type: 0x100c
+2017-05-04 11:42:46.203 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 11:42:46.203 [TID#3349] [Info] LE1F2870504114246108 Recv INTMSG_LG_NI_GLC_LC_AGPSINSTANT_REQUEST. sessionId: 23bebaae, setIdType: 6, setId: 10.68.96.43
+2017-05-04 11:42:46.203 [TID#3349] [Debug] _AGPS_INS_REQUEST:
+{
+  msgHeader:
+  {
+    length: 780,
+    msgType: 0x1032,
+    sessionId: 599702190, // [raw: 0x23bebaae]
+    version: 1,
+    malsMsgId: LE1F2870504114246108,
+  },
+  inputSetIdType: 1,
+  inputSetId: 2013600000331,
+  setIdType: 6,
+  setId: 10.68.96.43,
+  notify_type: 0,
+  position_method: 0,
+  qop:
+  {
+    resp_req_present: 1,
+    resp_req: 2,
+    resp_timer_present: 0,
+    resp_timer: 0,
+    hor_acc_present: 1,
+    hor_acc_meters: 100,
+    alt_acc_present: 0,
+    alt_acc_meters: 0,
+    max_loc_age_present: 0,
+    max_loc_age: 0,
+  },
+  reserved: 65797,0,139267,1,
+  is_emergence: 1,
+},
+2017-05-04 11:42:46.203 [TID#3349] [Info] receive glc message. type: 0x1032, sessionId: 23bebaae, dest: U, dest type: 0x1034
+2017-05-04 11:42:46.203 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tSUPLInterface]
+2017-05-04 11:42:46.203 [TID#3357] [Debug] [tSUPLInterface]: bool SUPLInterfaceLayer::processSUPLMessageOut(InterfaceMessage*)
+2017-05-04 11:42:46.203 [TID#3357] [Debug] Recv LG msgType(1034) MsgID:LE1F2870504114246108 Session:23BEBAAE
+2017-05-04 11:42:46.203 [TID#3357] [Debug] Message with length 780 is writing into [tSUPLInterface]
+2017-05-04 11:42:46.203 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 780
+2017-05-04 11:42:46.380 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 11:42:46.380 [TID#3357] [Info] LE1F2870504114246108 Recv INTMSG_LG_NI_SPU_LC_REF_POSITION_REQUEST. sessioId: 1060008e, setSessionId: 00000000, slpSessionId: 1060008e, setIdType: 1, setId: 2013600000331, aca: 0
+2017-05-04 11:42:46.380 [TID#3357] [Debug] _REF_POSITION_REQUEST:
+{
+  msgHeader:
+  {
+    length: 588,
+    msgType: 0x102a,
+    sessionId: 274727054, // [raw: 0x1060008e]
+    version: 0,
+    malsMsgId: LE1F2870504114246108,
+  },
+  type: 2,
+  cellType: 7,
+  cellInfo:
+  {
+    lteCell:
+    {
+      mcc: 086,
+      mnc: 28,
+      ci: 6165,
+      pci: 217,
+      tac: 1,
+      refSignalRecPowerPresent: true,
+      refSignalRecPower: 58,
+      refSignalRecQualityPresent: true,
+      refSignalRecQuality: 24,
+      timingAdvancdPresent: true,
+      timingAdvancd: 30,
+      lteMeasuredResultPresent: false,
+      neighbourCellList:
+      {
+        size: 0,
+      },
+    },
+  },
+  setIdType: 1,
+  setId: 2013600000331,
+  acaFlag: 0,
+  reserved: ,
+  setSessionID: 0,
+  slpSessionID: 274727054,
+  setType: 0,
+  ueIPType: 1,
+  ueIPAddress: 10.68.96.43,
+  uePort: 0,
+  TLSClientHellloRecvTime: 
+  {
+    tv_sec: 0,
+    tv_nsec: 0,
+  },
+  TLSFinishedSendTime: 
+  {
+    tv_sec: 0,
+    tv_nsec: 0,
+  },
+  START_RecvTime: 
+  {
+    tv_sec: 0,
+    tv_nsec: 0,
+  },
+  cellStatus: 1,
+  fqdn: supl.nsn.com,
+  prefMethod: 18,
+  posProtocol: 0,
+  appIDAvailable: 0,
+  appProvider: ,
+  appName: ,
+  appVersion: ,
+}
+2017-05-04 11:42:46.380 [TID#3357] [Debug] Got message from SPU, type: 0x102a
+2017-05-04 11:42:46.380 [TID#3357] [Debug] Forward Layer: G
+2017-05-04 11:42:46.380 [TID#3357] [Debug] Forward message type: 0x102c
+2017-05-04 11:42:46.380 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tGLCInterface]
+2017-05-04 11:42:46.380 [TID#3349] [Debug] Recv LG msgType(102C) MsgID:LE1F2870504114246108 Session:1060008E
+2017-05-04 11:42:46.380 [TID#3349] [Debug] Message with length 588 is writing into [tGLCInterface]
+2017-05-04 11:42:46.380 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 588
+2017-05-04 11:42:46.382 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 11:42:46.382 [TID#3349] [Info] LE1F2870504114246108 Recv INTMSG_LG_NI_GLC_LC_REF_POSITION_REQUEST. sessioId: 23c2baae, setSessionId: 00000000, slpSessionId: 1060008e, setIdType: 1, setId: 2013600000331, aca: 0
+2017-05-04 11:42:46.382 [TID#3349] [Debug] _REF_POSITION_REQUEST:
+{
+  msgHeader:
+  {
+    length: 588,
+    msgType: 0x102e,
+    sessionId: 599964334, // [raw: 0x23c2baae]
+    version: 0,
+    malsMsgId: LE1F2870504114246108,
+  },
+  type: 2,
+  cellType: 7,
+  cellInfo:
+  {
+    lteCell:
+    {
+      mcc: 086,
+      mnc: 28,
+      ci: 6165,
+      pci: 217,
+      tac: 1,
+      refSignalRecPowerPresent: true,
+      refSignalRecPower: 58,
+      refSignalRecQualityPresent: true,
+      refSignalRecQuality: 24,
+      timingAdvancdPresent: true,
+      timingAdvancd: 30,
+      lteMeasuredResultPresent: false,
+      neighbourCellList:
+      {
+        size: 0,
+      },
+    },
+  },
+  setIdType: 1,
+  setId: 2013600000331,
+  acaFlag: 0,
+  reserved: ,
+  setSessionID: 0,
+  slpSessionID: 274727054,
+  setType: 0,
+  ueIPType: 1,
+  ueIPAddress: 10.68.96.43,
+  uePort: 0,
+  TLSClientHellloRecvTime: 
+  {
+    tv_sec: 0,
+    tv_nsec: 0,
+  },
+  TLSFinishedSendTime: 
+  {
+    tv_sec: 0,
+    tv_nsec: 0,
+  },
+  START_RecvTime: 
+  {
+    tv_sec: 0,
+    tv_nsec: 0,
+  },
+  cellStatus: 1,
+  fqdn: supl.nsn.com,
+  prefMethod: 18,
+  posProtocol: 0,
+  appIDAvailable: 0,
+  appProvider: ,
+  appName: ,
+  appVersion: ,
+}
+2017-05-04 11:42:46.382 [TID#3349] [Info] receive glc message. type: 0x102e, sessionId: 23c2baae, dest: M, dest type: 0x1030, dest sessionId: 23c2baae
+2017-05-04 11:42:46.382 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tMLEInterface]
+2017-05-04 11:42:46.382 [TID#3351] [Info] Sending INTMSG_LG_SI_LC_MLE_REF_POSITION_REQUEST or INTMSG_LG_NI_LC_MLE_REF_POSITION_REQUEST. type: 0x1030, sessionId: 23c2baae, netType: 7, aca: 0
+2017-05-04 11:42:46.382 [TID#3351] [Debug] _POSITION_CALCULATION_LC_RAN_REQUEST:
+{
+  msgHeader:
+  {
+    length: 250,
+    msgType: 0x1030,
+    sessionId: 599964334, // [raw: 0x23c2baae]
+    version: 0,
+  },
+  acaFlag: 0,
+  netType: 7,
+  qop:
+  {
+    resp_req_present: 0,
+    resp_req: 0,
+    resp_timer_present: 0,
+    resp_timer: 0,
+    hor_acc_present: 0,
+    hor_acc_meters: 0,
+    alt_acc_present: 0,
+    alt_acc_meters: 0,
+    max_loc_age_present: 0,
+    max_loc_age: 0,
+  },
+  ranMeasurement:
+  {
+    lteMeasurement:
+    {
+      mobileCountryCode: 086,
+      mobileNetworkCode: 28,
+      cellID: 6165,
+      physCellId: 217,
+      trackingAreaCode: 1,
+      refSignalRecPowerPresent: true,
+      refSignalRecPower: 58,
+      refSignalRecQualityPresent: true,
+      refSignalRecQuality: 24,
+      timingAdvancdPresent: true,
+      timingAdvancd: 30,
+      lteMeasuredResultPresent: false,
+      lteMeasuredResultList:
+      {
+        size: 0,
+      },
+    },
+  },
+},
+
+2017-05-04 11:42:46.382 [TID#3351] [Debug] Message with length 250 is writing into [tMLEInterface]
+2017-05-04 11:42:46.382 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 250
+2017-05-04 11:42:46.388 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 11:42:46.388 [TID#3351] [Info] Recv INTMSG_LG_SI_LC_MLE_REF_POSITION_RESPONSE or INTMSG_LG_NI_LC_MLE_REF_POSITION_RESPONSE. type: 0x1031, sessionId: a3c2baae, aca: 0, result: 0
+2017-05-04 11:42:46.388 [TID#3351] [Debug] _LC_POSITION_CALCULATION_RESPONSE:
+{
+  msgHeader:
+  {
+    length: 599,
+    msgType: 0x1031,
+    sessionId: 2747447982, // [raw: 0xa3c2baae]
+    version: 0,
+  },
+  acaFlag: 0,
+  result: 0,
+  posMethod:,
+  {
+    nettype: 7, // [hex: 0x7]
+    assist: COMM_PA_MSB, 
+    proto: 0, // [hex: 00]
+    method: 3, // [hex: 0x3]
+  },
+  rawShape:
+  {
+    utc_timestamp: 1493898166,
+    express_type: 144,
+    lat_sign: 0,
+    latitude: 3070304,
+    longitude: -4530934,
+    alt_direction: 0,
+    altitude: 215,
+    semi_major_in_meters: 1875.235561,
+    semi_minor_in_meters: 1875.235561,
+    orientation_major_axis: 0,
+    confidence: 90,
+    alt_uncertainty_in_meters: 59.689496,
+    velocity_present: 0,
+    velocity:
+    {
+      type: 0,
+      bearing: 0,
+      hor_spd: 0,
+      ver_spd: 0,
+      ver_spd_dir: 0,
+      hor_uncert_spd: 0,
+      ver_uncert_spd: 0,
+    },
+  },
+  accuracyFulfilmentPresent: 48,
+  accuracyFulfilment: 48,
+},
+
+2017-05-04 11:42:46.388 [TID#3351] [Info] receive mle message. type: 0x1031, sessionId: 78000010, dest: G, dest type: 0x102f, dest sessionId: a3c2baae
+2017-05-04 11:42:46.388 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tGLCInterface]
+2017-05-04 11:42:46.388 [TID#3349] [Debug] Recv LG msgType(102F) MsgID: Session:23C2BAAE
+2017-05-04 11:42:46.388 [TID#3349] [Debug] Message with length 621 is writing into [tGLCInterface]
+2017-05-04 11:42:46.388 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 621
+2017-05-04 11:42:46.390 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 11:42:46.390 [TID#3349] [Info] LE1F2870504114246108 Recv INTMSG_LG_NI_LC_GLC_REF_POSITION_RESPONSE. sessionId: 9060008e, setSessionId: 00000000, slpSessionId: 1060008e, result: 1024
+2017-05-04 11:42:46.390 [TID#3349] [Debug] _REF_POSITION_RESPONSE :
+{
+  msgHeader:
+  {
+    length: 621,
+    msgType: 0x102d,
+    sessionId: 2422210702, // [raw: 0x9060008e]
+    version: 0,
+    malsMsgId: LE1F2870504114246108,
+  },
+  type: 2,
+  setSessionID: 0,
+  slpSessionID: 274727054,
+  result_code: 1024,
+  posMethod:,
+  {
+    nettype: 7, //[hex: 0x7]
+    assist: COMM_PA_MSB, 
+    proto: 0, //[hex: 00]
+    method: 3, //[hex: 0x3]
+  },
+  area_shape: 
+  {
+    utc_timestamp: 1493898166,
+    express_type: 144,
+    lat_sign: 0,
+    latitude: 3070304,
+    longitude: -4530934,
+    alt_direction: 0,
+    altitude: 215,
+    semi_major_in_meters: 1875.235561,
+    semi_minor_in_meters: 1875.235561,
+    orientation_major_axis: 0,
+    confidence: 90,
+    alt_uncertainty_in_meters: 59.689496,
+    velocity_present: 0,
+    velocity:
+    {
+      type: 0,
+      bearing: 0,
+      hor_spd: 0,
+      ver_spd: 0,
+      ver_spd_dir: 0,
+      hor_uncert_spd: 0,
+      ver_uncert_spd: 0,
+    },
+  },
+},
+2017-05-04 11:42:46.390 [TID#3349] [Info] receive glc message. type: 0x102d, sessionId: 9060008e, dest: U, dest type: 0x102b
+2017-05-04 11:42:46.390 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tSUPLInterface]
+2017-05-04 11:42:46.390 [TID#3357] [Debug] [tSUPLInterface]: bool SUPLInterfaceLayer::processSUPLMessageOut(InterfaceMessage*)
+2017-05-04 11:42:46.390 [TID#3357] [Debug] Recv LG msgType(102B) MsgID:LE1F2870504114246108 Session:1060008E
+2017-05-04 11:42:46.390 [TID#3357] [Debug] Message with length 621 is writing into [tSUPLInterface]
+2017-05-04 11:42:46.390 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 621
+2017-05-04 11:42:46.480 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 11:42:46.480 [TID#3357] [Info] LE1F2870504114246108 Recv INTMSG_LG_NI_LC_SPU_AGPSINSTANT_RESPONSE. sessionId: a3bebaae, setIdType: 1, setId: 2013600000331, result: 1024
+2017-05-04 11:42:46.480 [TID#3357] [Debug] _AGPS_INS_RESPONSE :
+{
+  msgHeader:
+  {
+    length: 480,
+    msgType: 0x1035,
+    sessionId: 2747185838, // [raw: 0xa3bebaae]
+    version: 1,
+    malsMsgId: LE1F2870504114246108,
+  },
+  position_method:,
+  {
+    nettype: 7, //[hex: 0x7]
+    assist: COMM_PA_MSA, 
+    proto: 2, //[hex: 0x2]
+    method: 4, //[hex: 0x4]
+  },
+  result: 
+  {
+    result_code: 1024,
+    supl_code: 255,
+    shape:
+    {
+      utc_timestamp: 1493898166,
+      express_type: 144,
+      lat_sign: 0,
+      latitude: 3069874,
+      longitude: -4530969,
+      alt_direction: 0,
+      altitude: 206,
+      semi_major_in_meters: 62.527391,
+      semi_minor_in_meters: 62.527391,
+      orientation_major_axis: 132,
+      confidence: 90,
+      alt_uncertainty_in_meters: 13.103804,
+      velocity_present: 0,
+      velocity:
+      {
+        type: 0,
+        bearing: 0,
+        hor_spd: 0,
+        ver_spd: 0,
+        ver_spd_dir: 0,
+        hor_uncert_spd: 0,
+        ver_uncert_spd: 0,
+      },
+    },
+  },
+}
+2017-05-04 11:42:46.480 [TID#3357] [Debug] Got message from SPU, type: 0x1035
+2017-05-04 11:42:46.480 [TID#3357] [Debug] Forward Layer: G
+2017-05-04 11:42:46.480 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tGLCInterface]
+2017-05-04 11:42:46.480 [TID#3349] [Debug] Recv LG msgType(1033) MsgID:LE1F2870504114246108 Session:23BEBAAE
+2017-05-04 11:42:46.480 [TID#3349] [Debug] Message with length 480 is writing into [tGLCInterface]
+2017-05-04 11:42:46.480 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 480
+2017-05-04 11:42:48.492 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 11:42:48.492 [TID#3349] [Debug] Recv LG msgType(100B) MsgID: Session:0
+2017-05-04 11:42:48.492 [TID#3349] [Debug] receive glc link check request message. type: 0x100b
+2017-05-04 11:42:48.492 [TID#3349] [Debug] Message with length 41 is writing into [tGLCInterface]
+2017-05-04 11:42:48.492 [TID#3349] [Debug] [tGLCInterface]: LinkCheckRequest has been processed!
+2017-05-04 11:42:48.492 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 41
+2017-05-04 11:42:50.169 [TID#3354] [Debug] Message with length 28 is writing into [tMLEInterface]
+2017-05-04 11:42:50.169 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 28
+2017-05-04 11:42:50.170 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 11:42:50.170 [TID#3351] [Debug] receive mle link check response message. type: 0x1037

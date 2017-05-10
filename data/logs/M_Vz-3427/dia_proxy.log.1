@@ -1,0 +1,1217 @@
+2017-05-04 10:55:36.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:36.286 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:36.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:37.168 [TID#3315] [Debug] ProxyDiaConnection::handleDWRTimeout(): Enter
+2017-05-04 10:55:37.169 [TID#3315] [Debug] ProxyDiaConnection::sendDWRToPeer(): Enter
+2017-05-04 10:55:37.169 [TID#3315] [Debug] ProxyDiaConnection::sendDWRToPeer(): start to send DWR to peer:wds1@nsn.com
+2017-05-04 10:55:37.169 [TID#3315] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Enter
+2017-05-04 10:55:37.169 [TID#3315] [Debug] DiaRequestCallbackMgr::addRequestCallback(): add callback of request with hopByHopId:16777267
+2017-05-04 10:55:37.169 [TID#3315] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Exit
+2017-05-04 10:55:37.169 [TID#3315] [Debug] DiaTcpConnection::sendMessage: Enter
+2017-05-04 10:55:37.169 [TID#3315] [Debug] DiaTcpConnection::sendMessage: Exit
+2017-05-04 10:55:37.169 [TID#3315] [Debug] ProxyDiaConnection::sendDWRToPeer(): Exit
+2017-05-04 10:55:37.169 [TID#3315] [Debug] ProxyDiaConnection::handleDWRTimeout(): Exit
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Enter
+2017-05-04 10:55:37.169 [TID#3285] [Info] DiaTcpConnection::dataReceived(): received 48 bytes from peer, total 0 bytes in buffer
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaReadAndCutMessage(): Enter
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaReadAndCutMessage(): read a message: 
+<DWR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>6198</hopByHopId>
+	<endToEndId>2324698984</endToEndId>
+	<OriginHostAvp>wds1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWR> and length: 48
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaReadAndCutMessage(): Exit
+2017-05-04 10:55:37.169 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): succeed to receive a message
+
+<DWR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>6198</hopByHopId>
+	<endToEndId>2324698984</endToEndId>
+	<OriginHostAvp>wds1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWR>, still 0 bytes in buffer
+2017-05-04 10:55:37.169 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:37.169 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:37.169 [TID#3247] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:37.169 [TID#3247] [Debug] ProxyDiaConnection::handleMessage: Enter
+2017-05-04 10:55:37.170 [TID#3285] [Debug] DiaTcpConnection::startRead(): Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] ProxyDiaConnection::handleMessage: Exit
+2017-05-04 10:55:37.170 [TID#3285] [Debug] DiaTcpConnection::startRead(): Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:37.170 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] ProxyDiaConnection::processInMessage: Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] ProxyDiaConnection::processInMessage: handle the received request in connection 0x7f96500055f0
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaRequestHandlerMgr::handleRequest: Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaRequestHandlerMgr::getRequestHandler: Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaRequestHandlerMgr::getRequestHandler: find request handler for appIdCode = 280 from handler manager 0x7f9650005670
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaRequestHandlerMgr::getRequestHandler: Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::handleRequest(): Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::getRequestHandler(): Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::getRequestHandler(): the handler 0x7f9650004680 is not tried for request 0x7f9640028d50, try it
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::getRequestHandler(): Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::handleRequest(): get handler 0x7f9650004680 for request 0x7f9640028d50, send this request to the handler
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::handleResponse(): Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::isNeedRetryAnswer(): Enter
+2017-05-04 10:55:37.170 [TID#3247] [Info] DiaLoadBalancedRequestHandler::isNeedRetryAnswer(): no need to retry the request, because its result code is DIAMETER_SUCCESS
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::isNeedRetryAnswer(): Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::handleResponse(): receive a normal answer for request 0x7f9640028d50,send it to sender
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaTcpConnection::sendMessage: Enter
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaTcpConnection::sendMessage: Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::handleResponse(): Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaLoadBalancedRequestHandler::handleRequest(): Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] DiaRequestHandlerMgr::handleRequest: Exit
+2017-05-04 10:55:37.170 [TID#3247] [Debug] ProxyDiaConnection::processInMessage: Exit
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Enter
+2017-05-04 10:55:37.171 [TID#3285] [Info] DiaTcpConnection::dataReceived(): received 60 bytes from peer, total 0 bytes in buffer
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Enter
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Exit
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaReadAndCutMessage(): Enter
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaReadAndCutMessage(): read a message: 
+<DWA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>16777267</hopByHopId>
+	<endToEndId>2324693043</endToEndId>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp>wds1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWA> and length: 60
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaReadAndCutMessage(): Exit
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): succeed to receive a message
+
+<DWA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>16777267</hopByHopId>
+	<endToEndId>2324693043</endToEndId>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp>wds1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWA>, still 0 bytes in buffer
+2017-05-04 10:55:37.171 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:37.171 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaTcpConnection::startRead(): Enter
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaTcpConnection::startRead(): Exit
+2017-05-04 10:55:37.171 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Exit
+2017-05-04 10:55:37.171 [TID#3232] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:37.172 [TID#3232] [Debug] ProxyDiaConnection::handleMessage: Enter
+2017-05-04 10:55:37.172 [TID#3232] [Debug] ProxyDiaConnection::handleMessage: Exit
+2017-05-04 10:55:37.172 [TID#3232] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:37.172 [TID#3264] [Debug] ProxyDiaConnection::processInMessage: Enter
+2017-05-04 10:55:37.172 [TID#3264] [Debug] ProxyDiaConnection::processInMessage: handle the received answer in connection 0x7f96500055f0
+2017-05-04 10:55:37.172 [TID#3264] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:37.172 [TID#3264] [Debug] DiaRequestCallbackMgr::handleAnswer(): found callback for local answer by hopByHopId 16777267, process answer
+2017-05-04 10:55:37.172 [TID#3264] [Debug] ProxyDiaConnection::handleDWAnswer: Enter
+2017-05-04 10:55:37.172 [TID#3264] [Debug] ProxyDiaConnection::handleDWAnswer: handle DWA
+2017-05-04 10:55:37.172 [TID#3264] [Debug] ProxyDiaConnection::handleDWAnswer: Exit
+2017-05-04 10:55:37.172 [TID#3264] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:37.172 [TID#3264] [Debug] ProxyDiaConnection::processInMessage: Exit
+2017-05-04 10:55:37.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:37.286 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:37.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnection::handleDWRTimeout(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnection::handleDWRTimeout(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnection::~ProxyDiaConnection: Enter
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnection::~ProxyDiaConnection: destroy connection 0x7f9648017450
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnStats::printConnectedNum(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnStats::printConnectedNum(): Number of connected connections:4
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnStats::printConnectedNum(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::close(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::close(): the connection is not connected, ignore close() operation
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::close(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaMessageHandler::stop(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaMessageHandler::stop(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaConnection::~ProxyDiaConnection: Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::~DiaSctpAcceptedConnection(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Info] DiaSctpAcceptedConnection::~DiaSctpAcceptedConnection(): DiaSctpAcceptedConnection 0x7f964803cd30 is destructed
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::_close(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::_close(): the connection is not connected, ignore close() operation
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::_close(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] DiaSctpAcceptedConnection::~DiaSctpAcceptedConnection(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaMessageHandler::stop(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Info] ProxyDiaMessageHandler::stop(): it is already stopped
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaMessageHandler::stop(): Exit
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaMessageHandler::stop(): Enter
+2017-05-04 10:55:37.972 [TID#3311] [Info] ProxyDiaMessageHandler::stop(): it is already stopped
+2017-05-04 10:55:37.972 [TID#3311] [Debug] ProxyDiaMessageHandler::stop(): Exit
+2017-05-04 10:55:38.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:38.286 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:38.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:39.286 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:39.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:39.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:40.286 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:40.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:40.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:41.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:41.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:41.286 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpMsgReaderWriter::readMessage(): Enter
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpMsgReaderWriter::readMessage(): receive a notification:SCTP_SHUTDOWN_EVENT: assoc=8262
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpMsgReaderWriter::readMessage(): Exit
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpAcceptedConnection::doMsgRead(): Enter
+2017-05-04 10:55:42.029 [TID#3324] [Error] DiaSctpAcceptedConnection::doMsgRead(): catch exeption:Sctp shutdown event
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpAcceptedConnection::doMsgRead(): Exit
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpAcceptedConnection::_close(): Enter
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpMsgReaderWriter::close(): Enter
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpMsgReaderWriter::close(): Exit
+2017-05-04 10:55:42.029 [TID#3324] [Debug] ProxyDiaMessageHandler::stop(): Enter
+2017-05-04 10:55:42.029 [TID#3324] [Debug] ProxyDiaMessageHandler::stop(): Exit
+2017-05-04 10:55:42.029 [TID#3324] [Debug] ProxyDiaConnection::connectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3324] [Debug] ProxyDiaConnection::connectionLost(): Exit
+2017-05-04 10:55:42.029 [TID#3324] [Debug] DiaSctpAcceptedConnection::_close(): Exit
+2017-05-04 10:55:42.029 [TID#3305] [Debug] ProxyDiaConnection::processConnectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3305] [Debug] ProxyDiaConnection::processConnectionLost(): connection slgserver.ks.rd@nsn.com is lost
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DefDiaStack::connectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3305] [Info] DefDiaStack::connectionLost(): connection 0x7f9640026590 is lost, still 0 on this connection
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DefDiaStack::connectionLost(): Exit
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DiaRealmHostConnection::connectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DiaRealmHostConnection::connectionLost(): connection 0x7f9640026590 is lost in 0x7f9648031bf0:slgserver.ks.rd@nsn.com
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DiaCompoundConnection::connectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DiaCompoundConnection::connectionLost(): connection slgserver.ks.rd@nsn.com is lost
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): remove a not reconnectable diameter connection:slgserver.ks.rd@nsn.com
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Enter
+2017-05-04 10:55:42.029 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): removed the connection slgserver.ks.rd@nsn.com
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): try to remove connection listener 0x18cfcb0
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): remove connection:slgserver.ks.rd@nsn.com from realmHost manager
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmConnection::connectionLost(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmConnection::connectionLost(): connection 0x7f9648031bf0 is lost in 0x7f9648017d70:nsn.com
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::connectionLost(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::connectionLost(): connection slgserver.ks.rd@nsn.com is lost
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): try to remove connection listener 0x7f9648017de8
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): remove a not reconnectable diameter connection:slgserver.ks.rd@nsn.com
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): removed the connection nsn.com
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): try to remove connection listener 0x18cfcb0
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::removeConnectionListener(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): remove connection:slgserver.ks.rd@nsn.com from realmHost manager
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmRoutingConnMgr::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DefDiaPeerTable::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmConnection::~DiaRealmConnection(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmConnection::~DiaRealmConnection(): realm=nsn.com
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmConnection::~DiaRealmConnection(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::~DiaCompoundConnection(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::~DiaCompoundConnection(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaMessageHandler::stop(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaMessageHandler::stop(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmConnection::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmHostConnection::~DiaRealmHostConnection(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmHostConnection::~DiaRealmHostConnection(): host@realm=slgserver.ks.rd@nsn.com
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmHostConnection::~DiaRealmHostConnection(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::~DiaCompoundConnection(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::~DiaCompoundConnection(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaMessageHandler::stop(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaMessageHandler::stop(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaCompoundConnection::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] DiaRealmHostConnection::connectionLost(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaConnection::tryToReconnect(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Info] ProxyDiaConnection::tryToReconnect(): No need to reconnect
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaConnection::tryToReconnect(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaConnStats::printConnectedNum(): Enter
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaConnStats::printConnectedNum(): Number of connected connections:3
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaConnStats::printConnectedNum(): Exit
+2017-05-04 10:55:42.030 [TID#3305] [Debug] ProxyDiaConnection::processConnectionLost(): Exit
+2017-05-04 10:55:42.286 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:42.286 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:42.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:43.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:43.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:43.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:43.853 [TID#3313] [Debug] ProxyDiaConnection::handleDWRTimeout(): Enter
+2017-05-04 10:55:43.853 [TID#3313] [Debug] ProxyDiaConnection::sendDWRToPeer(): Enter
+2017-05-04 10:55:43.853 [TID#3313] [Debug] ProxyDiaConnection::sendDWRToPeer(): start to send DWR to peer:fis1@nsn.com
+2017-05-04 10:55:43.853 [TID#3313] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Enter
+2017-05-04 10:55:43.853 [TID#3313] [Debug] DiaRequestCallbackMgr::addRequestCallback(): add callback of request with hopByHopId:16777270
+2017-05-04 10:55:43.853 [TID#3313] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Exit
+2017-05-04 10:55:43.853 [TID#3313] [Debug] DiaTcpConnection::sendMessage: Enter
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Enter
+2017-05-04 10:55:43.853 [TID#3285] [Info] DiaTcpConnection::dataReceived(): received 48 bytes from peer, total 0 bytes in buffer
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:43.853 [TID#3313] [Debug] DiaTcpConnection::sendMessage: Exit
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:43.853 [TID#3313] [Debug] ProxyDiaConnection::sendDWRToPeer(): Exit
+2017-05-04 10:55:43.853 [TID#3313] [Debug] ProxyDiaConnection::handleDWRTimeout(): Exit
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaReadAndCutMessage(): Enter
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaReadAndCutMessage(): read a message: 
+<DWR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>4449</hopByHopId>
+	<endToEndId>2330988891</endToEndId>
+	<OriginHostAvp>fis1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWR> and length: 48
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaReadAndCutMessage(): Exit
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): succeed to receive a message
+
+<DWR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>4449</hopByHopId>
+	<endToEndId>2330988891</endToEndId>
+	<OriginHostAvp>fis1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWR>, still 0 bytes in buffer
+2017-05-04 10:55:43.853 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:43.853 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:43.853 [TID#3329] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:43.853 [TID#3285] [Debug] DiaTcpConnection::startRead(): Enter
+2017-05-04 10:55:43.853 [TID#3329] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaMessageHandler::handleMessage(): process message immediatelly
+2017-05-04 10:55:43.854 [TID#3285] [Debug] DiaTcpConnection::startRead(): Exit
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:43.854 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Exit
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaConnection::handleMessage: Enter
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaConnection::handleMessage: Exit
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] ProxyDiaConnection::processInMessage: Enter
+2017-05-04 10:55:43.854 [TID#3329] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] ProxyDiaConnection::processInMessage: handle the received request in connection 0x18d5f30
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaRequestHandlerMgr::handleRequest: Enter
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaRequestHandlerMgr::getRequestHandler: Enter
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaRequestHandlerMgr::getRequestHandler: find request handler for appIdCode = 280 from handler manager 0x18d5fb0
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaRequestHandlerMgr::getRequestHandler: Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::handleRequest(): Enter
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::getRequestHandler(): Enter
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::getRequestHandler(): the handler 0x18d6190 is not tried for request 0x7f96400009a0, try it
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::getRequestHandler(): Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::handleRequest(): get handler 0x18d6190 for request 0x7f96400009a0, send this request to the handler
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::handleResponse(): Enter
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::isNeedRetryAnswer(): Enter
+2017-05-04 10:55:43.854 [TID#3325] [Info] DiaLoadBalancedRequestHandler::isNeedRetryAnswer(): no need to retry the request, because its result code is DIAMETER_SUCCESS
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::isNeedRetryAnswer(): Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::handleResponse(): receive a normal answer for request 0x7f96400009a0,send it to sender
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaTcpConnection::sendMessage: Enter
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaTcpConnection::sendMessage: Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::handleResponse(): Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaLoadBalancedRequestHandler::handleRequest(): Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] DiaRequestHandlerMgr::handleRequest: Exit
+2017-05-04 10:55:43.854 [TID#3325] [Debug] ProxyDiaConnection::processInMessage: Exit
+2017-05-04 10:55:43.855 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Enter
+2017-05-04 10:55:43.855 [TID#3285] [Info] DiaTcpConnection::dataReceived(): received 60 bytes from peer, total 0 bytes in buffer
+2017-05-04 10:55:43.855 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Enter
+2017-05-04 10:55:43.855 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Exit
+2017-05-04 10:55:43.855 [TID#3285] [Debug] DiaReadAndCutMessage(): Enter
+2017-05-04 10:55:43.856 [TID#3285] [Debug] DiaReadAndCutMessage(): read a message: 
+<DWA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>16777270</hopByHopId>
+	<endToEndId>2330984502</endToEndId>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp>fis1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWA> and length: 60
+2017-05-04 10:55:43.856 [TID#3285] [Debug] DiaReadAndCutMessage(): Exit
+2017-05-04 10:55:43.856 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): succeed to receive a message
+
+<DWA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>280</code>
+	<applicationId>0</applicationId>
+	<hopByHopId>16777270</hopByHopId>
+	<endToEndId>2330984502</endToEndId>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp>fis1</OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+</DWA>, still 0 bytes in buffer
+2017-05-04 10:55:43.856 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:43.856 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:43.856 [TID#3285] [Debug] DiaTcpConnection::startRead(): Enter
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::handleMessage(): process message immediatelly
+2017-05-04 10:55:43.856 [TID#3285] [Debug] DiaTcpConnection::startRead(): Exit
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaConnection::handleMessage: Enter
+2017-05-04 10:55:43.856 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Exit
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaConnection::handleMessage: Exit
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:43.856 [TID#3327] [Debug] ProxyDiaConnection::processInMessage: Enter
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:43.856 [TID#3328] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:43.856 [TID#3327] [Debug] ProxyDiaConnection::processInMessage: handle the received answer in connection 0x18d5f30
+2017-05-04 10:55:43.856 [TID#3327] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:43.856 [TID#3327] [Debug] DiaRequestCallbackMgr::handleAnswer(): found callback for local answer by hopByHopId 16777270, process answer
+2017-05-04 10:55:43.856 [TID#3327] [Debug] ProxyDiaConnection::handleDWAnswer: Enter
+2017-05-04 10:55:43.856 [TID#3327] [Debug] ProxyDiaConnection::handleDWAnswer: handle DWA
+2017-05-04 10:55:43.856 [TID#3327] [Debug] ProxyDiaConnection::handleDWAnswer: Exit
+2017-05-04 10:55:43.856 [TID#3327] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:43.856 [TID#3327] [Debug] ProxyDiaConnection::processInMessage: Exit
+2017-05-04 10:55:44.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:44.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:44.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:44.501 [TID#3315] [Debug] ProxyDiaConnection::handleCERTimeout(): Enter
+2017-05-04 10:55:44.501 [TID#3315] [Debug] ProxyDiaConnection::handleCERTimeout(): not in connected state, it is in state:Closed
+2017-05-04 10:55:44.501 [TID#3315] [Debug] ProxyDiaConnStats::printConnectedNum(): Enter
+2017-05-04 10:55:44.501 [TID#3315] [Debug] ProxyDiaConnStats::printConnectedNum(): Number of connected connections:3
+2017-05-04 10:55:44.501 [TID#3315] [Debug] ProxyDiaConnStats::printConnectedNum(): Exit
+2017-05-04 10:55:44.501 [TID#3315] [Debug] ProxyDiaConnection::handleCERTimeout(): Exit
+2017-05-04 10:55:45.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:45.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:45.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:45.964 [TID#3284] [Debug] DiaTcpClientMsgProcessor::startRecvMsg: Enter
+2017-05-04 10:55:45.964 [TID#3284] [Debug] DiaTcpClientMsgProcessor::startRecvMsg: Exit
+2017-05-04 10:55:45.964 [TID#3299] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:45.964 [TID#3299] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:45.964 [TID#3299] [Debug] DiaTcpClientMsgProcessor::processMessage(): Enter
+2017-05-04 10:55:45.964 [TID#3299] [Debug] DiaTcpClientMsgProcessor::processMessage(): start to process message:
+
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<UDR>
+			<version>1</version>
+			<flags>192</flags>
+			<code>306</code>
+			<applicationId>16777217</applicationId>
+			<hopByHopId>50331667</hopByHopId>
+			<endToEndId>2333081638</endToEndId>
+			<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+			<VendorSpecificApplicationIdAvp>
+				<VendorIdAvp>10415</VendorIdAvp>
+				<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+			</VendorSpecificApplicationIdAvp>
+			<AuthSessionStateAvp>1</AuthSessionStateAvp>
+			<UserIdentityAvp>
+				<PublicIdentityAvp>sip:311480136000184@ims.mnc480.mcc311.3gppnetwork.org</PublicIdentityAvp>
+			</UserIdentityAvp>
+			<DataReferenceAvp>11</DataReferenceAvp>
+			<DataReferenceAvp>17</DataReferenceAvp>
+			<SupportedFeaturesAvp>
+				<VendorIdAvp>10415</VendorIdAvp>
+				<FeatureListIDAvp>1</FeatureListIDAvp>
+				<FeatureListAvp>1</FeatureListAvp>
+			</SupportedFeaturesAvp>
+		</UDR>
+	</DiaMsg>
+</DiaTcpClientStackMsg> from client 10.68.96.43:11667
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaTcpClientMsgProcessor::processMessage(): Exit
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): Enter
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): received a diameter message:
+<UDR>
+	<version>1</version>
+	<flags>192</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>50331667</hopByHopId>
+	<endToEndId>2333081638</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<UserIdentityAvp>
+		<PublicIdentityAvp>sip:311480136000184@ims.mnc480.mcc311.3gppnetwork.org</PublicIdentityAvp>
+	</UserIdentityAvp>
+	<DataReferenceAvp>11</DataReferenceAvp>
+	<DataReferenceAvp>17</DataReferenceAvp>
+	<SupportedFeaturesAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<FeatureListIDAvp>1</FeatureListIDAvp>
+		<FeatureListAvp>1</FeatureListAvp>
+	</SupportedFeaturesAvp>
+</UDR> from client 10.68.96.43:11667
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DefDiaStack::forwardRequest(): Enter
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DefDiaStack::forwardRequest(): destination realm is not set, set it to nsn.com
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Enter
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaRetryRequestCallback::mapEndToEndId(): map the EndToEndId from old 2333081638 to new 2333081642
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Exit
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Enter
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaRequestCallbackMgr::addRequestCallback(): add callback of request with hopByHopId:16777258
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Exit
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DefDiaStack::forwardRequest(): Exit
+2017-05-04 10:55:45.965 [TID#3299] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): Exit
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaStack::sendMessage(): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaStack::sendMessage(): try to send message out
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaStack::getConnection( const DiaMessage& ): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaStack::getConnection( const DiaMessage& ): extract the destination realm=nsn.com, destination host= from message
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaPeerTable::getConnection(): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaPeerTable::getConnection(): try to get the connection for realm=nsn.com,host=
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaPeerTable::getConnection(): succeed to get connection by realm=nsn.com,it is not peer
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaPeerTable::getConnection(): Exit
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaStack::getConnection( const DiaMessage& ): success to find the connection by destRealm=nsn.com, destHost=,appId=16777217
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DefDiaStack::getConnection( const DiaMessage& ): Exit
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] ProxyDiaConnection::sendMessage(): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] ProxyDiaConnection::doAsyncSend(): Enter
+2017-05-04 10:55:45.965 [TID#3294] [Debug] ProxyDiaConnection::doAsyncSend(): try to send message:0x7f96480307c0 through the connection:0x18cfe10
+2017-05-04 10:55:45.965 [TID#3294] [Debug] ProxyDiaConnection::doAsyncSend(): desctionation realm equals peer realm:nsn.com
+2017-05-04 10:55:45.965 [TID#3294] [Debug] ProxyDiaConnection::doAsyncSend(): nsn.com is the direct realm
+2017-05-04 10:55:45.965 [TID#3294] [Debug] ProxyDiaConnection::doAsyncSend(): set the destination host to peer host:hss
+2017-05-04 10:55:45.965 [TID#3294] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:45.966 [TID#3294] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:45.966 [TID#3294] [Debug] DiaTcpConnection::sendMessage: Enter
+2017-05-04 10:55:45.966 [TID#3294] [Debug] DiaTcpConnection::sendMessage: Exit
+2017-05-04 10:55:45.966 [TID#3294] [Debug] ProxyDiaConnection::doAsyncSend(): Exit
+2017-05-04 10:55:45.966 [TID#3294] [Debug] ProxyDiaConnection::sendMessage(): Exit
+2017-05-04 10:55:45.966 [TID#3294] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Exit
+2017-05-04 10:55:45.966 [TID#3294] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Exit
+2017-05-04 10:55:45.966 [TID#3294] [Debug] DefDiaStack::sendMessage(): Exit
+2017-05-04 10:55:45.966 [TID#3285] [Debug] ProxyDiaConnection::messageSendCompleted(): Enter
+2017-05-04 10:55:45.966 [TID#3285] [Debug] ProxyDiaConnection::messageSendCompleted(): succeed to send the message to peer
+2017-05-04 10:55:45.966 [TID#3285] [Debug] DefDiaStack::messageSendCompleted(): Enter
+2017-05-04 10:55:45.966 [TID#3285] [Debug] DefDiaStack::messageSendCompleted(): Exit
+2017-05-04 10:55:45.966 [TID#3285] [Debug] ProxyDiaConnection::messageSendCompleted(): Exit
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Enter
+2017-05-04 10:55:45.969 [TID#3285] [Info] DiaTcpConnection::dataReceived(): received 356 bytes from peer, total 0 bytes in buffer
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Enter
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Exit
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaReadAndCutMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaReadAndCutMessage(): read a message: 
+<UDA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>16777258</hopByHopId>
+	<endToEndId>2333081642</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp></OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Sh-IMS-Data>
+    <IMSUserState>1</IMSUserState>
+  </Sh-IMS-Data>
+  <PublicIdentifiers>
+    <MSISDN>2013600000184</MSISDN>
+  </PublicIdentifiers>
+</Sh-Data>
+</UserDataAvp>
+</UDA> and length: 356
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaReadAndCutMessage(): Exit
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): succeed to receive a message
+
+<UDA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>16777258</hopByHopId>
+	<endToEndId>2333081642</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp></OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Sh-IMS-Data>
+    <IMSUserState>1</IMSUserState>
+  </Sh-IMS-Data>
+  <PublicIdentifiers>
+    <MSISDN>2013600000184</MSISDN>
+  </PublicIdentifiers>
+</Sh-Data>
+</UserDataAvp>
+</UDA>, still 0 bytes in buffer
+2017-05-04 10:55:45.969 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaConnection::handleMessage: Enter
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaTcpConnection::startRead(): Enter
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaConnection::handleMessage: Exit
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaTcpConnection::startRead(): Exit
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaConnection::processInMessage: Enter
+2017-05-04 10:55:45.969 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Exit
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaConnection::processInMessage: handle the received answer in connection 0x18cfe10
+2017-05-04 10:55:45.969 [TID#3290] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:45.969 [TID#3290] [Debug] DiaRequestCallbackMgr::handleAnswer(): fail to found callback by hopByHopId 16777258 for local answer, discard answer
+2017-05-04 10:55:45.969 [TID#3290] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:45.969 [TID#3292] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3290] [Debug] ProxyDiaConnection::processInMessage: Exit
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DefDiaStack::handleMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DefDiaStack::handleMessage(): an answer is received
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRequestCallbackMgr::handleAnswer(): found callback for local answer by hopByHopId 16777258, process answer
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Enter
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): unmap the EndToEndId from new 2333081642 to old 2333081638
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Exit
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRetryRequestCallback::handleAnswer(): Enter
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRetryRequestCallback::handleAnswer(): handle answer:
+<UDA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>16777258</hopByHopId>
+	<endToEndId>2333081638</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp></OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Sh-IMS-Data>
+    <IMSUserState>1</IMSUserState>
+  </Sh-IMS-Data>
+  <PublicIdentifiers>
+    <MSISDN>2013600000184</MSISDN>
+  </PublicIdentifiers>
+</Sh-Data>
+</UserDataAvp>
+</UDA>
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaRetryRequestCallback::handleAnswer(): Exit
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): Enter
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): try to send answer to client
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaTcpClientMsgProcessor::sendMessage(): Enter
+2017-05-04 10:55:45.969 [TID#3292] [Debug] DiaTcpClientMsgProcessor::sendMessage(): try to send message 
+
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<UDA>
+			<version>1</version>
+			<flags>0</flags>
+			<code>306</code>
+			<applicationId>16777217</applicationId>
+			<hopByHopId>50331667</hopByHopId>
+			<endToEndId>2333081638</endToEndId>
+			<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+			<ResultCodeAvp>2001</ResultCodeAvp>
+			<OriginHostAvp></OriginHostAvp>
+			<OriginRealmAvp>nsn.com</OriginRealmAvp>
+			<AuthSessionStateAvp>1</AuthSessionStateAvp>
+			<VendorSpecificApplicationIdAvp>
+				<VendorIdAvp>10415</VendorIdAvp>
+				<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+			</VendorSpecificApplicationIdAvp>
+			<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Sh-IMS-Data>
+    <IMSUserState>1</IMSUserState>
+  </Sh-IMS-Data>
+  <PublicIdentifiers>
+    <MSISDN>2013600000184</MSISDN>
+  </PublicIdentifiers>
+</Sh-Data>
+</UserDataAvp>
+		</UDA>
+	</DiaMsg>
+</DiaTcpClientStackMsg> to peer
+2017-05-04 10:55:45.970 [TID#3292] [Debug] DiaTcpClientMsgProcessor::sendMessage(): Exit
+2017-05-04 10:55:45.970 [TID#3292] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): Exit
+2017-05-04 10:55:45.970 [TID#3292] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:45.970 [TID#3292] [Debug] DefDiaStack::handleMessage(): Exit
+2017-05-04 10:55:45.970 [TID#3292] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:45.972 [TID#3284] [Debug] DiaTcpClientMsgProcessor::startRecvMsg: Enter
+2017-05-04 10:55:45.972 [TID#3284] [Debug] DiaTcpClientMsgProcessor::startRecvMsg: Exit
+2017-05-04 10:55:45.972 [TID#3298] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:45.972 [TID#3298] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaTcpClientMsgProcessor::processMessage(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaTcpClientMsgProcessor::processMessage(): start to process message:
+
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<UDR>
+			<version>1</version>
+			<flags>192</flags>
+			<code>306</code>
+			<applicationId>16777217</applicationId>
+			<hopByHopId>50331668</hopByHopId>
+			<endToEndId>2333081640</endToEndId>
+			<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+			<VendorSpecificApplicationIdAvp>
+				<VendorIdAvp>10415</VendorIdAvp>
+				<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+			</VendorSpecificApplicationIdAvp>
+			<AuthSessionStateAvp>1</AuthSessionStateAvp>
+			<UserIdentityAvp>
+				<MSISDNAvp>2013600000184</MSISDNAvp>
+			</UserIdentityAvp>
+			<DataReferenceAvp>14</DataReferenceAvp>
+			<DataReferenceAvp>10</DataReferenceAvp>
+			<IdentitySetAvp>0</IdentitySetAvp>
+			<SupportedFeaturesAvp>
+				<VendorIdAvp>10415</VendorIdAvp>
+				<FeatureListIDAvp>1</FeatureListIDAvp>
+				<FeatureListAvp>1</FeatureListAvp>
+			</SupportedFeaturesAvp>
+			<RequestedDomainAvp>1</RequestedDomainAvp>
+			<RequestedNodesAvp>1</RequestedNodesAvp>
+			<CurrentLocationAvp>0</CurrentLocationAvp>
+		</UDR>
+	</DiaMsg>
+</DiaTcpClientStackMsg> from client 10.68.96.43:11667
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaTcpClientMsgProcessor::processMessage(): Exit
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): received a diameter message:
+<UDR>
+	<version>1</version>
+	<flags>192</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>50331668</hopByHopId>
+	<endToEndId>2333081640</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<UserIdentityAvp>
+		<MSISDNAvp>2013600000184</MSISDNAvp>
+	</UserIdentityAvp>
+	<DataReferenceAvp>14</DataReferenceAvp>
+	<DataReferenceAvp>10</DataReferenceAvp>
+	<IdentitySetAvp>0</IdentitySetAvp>
+	<SupportedFeaturesAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<FeatureListIDAvp>1</FeatureListIDAvp>
+		<FeatureListAvp>1</FeatureListAvp>
+	</SupportedFeaturesAvp>
+	<RequestedDomainAvp>1</RequestedDomainAvp>
+	<RequestedNodesAvp>1</RequestedNodesAvp>
+	<CurrentLocationAvp>0</CurrentLocationAvp>
+</UDR> from client 10.68.96.43:11667
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DefDiaStack::forwardRequest(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DefDiaStack::forwardRequest(): destination realm is not set, set it to nsn.com
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaRetryRequestCallback::mapEndToEndId(): map the EndToEndId from old 2333081640 to new 2333081643
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Exit
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaRequestCallbackMgr::addRequestCallback(): add callback of request with hopByHopId:16777259
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Exit
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DefDiaStack::forwardRequest(): Exit
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaStack::sendMessage(): Enter
+2017-05-04 10:55:45.973 [TID#3298] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): Exit
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaStack::sendMessage(): try to send message out
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaStack::getConnection( const DiaMessage& ): Enter
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaStack::getConnection( const DiaMessage& ): extract the destination realm=nsn.com, destination host= from message
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaPeerTable::getConnection(): Enter
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaPeerTable::getConnection(): try to get the connection for realm=nsn.com,host=
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaPeerTable::getConnection(): succeed to get connection by realm=nsn.com,it is not peer
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaPeerTable::getConnection(): Exit
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaStack::getConnection( const DiaMessage& ): success to find the connection by destRealm=nsn.com, destHost=,appId=16777217
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DefDiaStack::getConnection( const DiaMessage& ): Exit
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Enter
+2017-05-04 10:55:45.973 [TID#3295] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Enter
+2017-05-04 10:55:45.973 [TID#3295] [Debug] ProxyDiaConnection::sendMessage(): Enter
+2017-05-04 10:55:45.973 [TID#3295] [Debug] ProxyDiaConnection::doAsyncSend(): Enter
+2017-05-04 10:55:45.973 [TID#3295] [Debug] ProxyDiaConnection::doAsyncSend(): try to send message:0x7f9640004fb0 through the connection:0x18cfe10
+2017-05-04 10:55:45.973 [TID#3295] [Debug] ProxyDiaConnection::doAsyncSend(): desctionation realm equals peer realm:nsn.com
+2017-05-04 10:55:45.973 [TID#3295] [Debug] ProxyDiaConnection::doAsyncSend(): nsn.com is the direct realm
+2017-05-04 10:55:45.974 [TID#3295] [Debug] ProxyDiaConnection::doAsyncSend(): set the destination host to peer host:hss
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DiaTcpConnection::sendMessage: Enter
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DiaTcpConnection::sendMessage: Exit
+2017-05-04 10:55:45.974 [TID#3295] [Debug] ProxyDiaConnection::doAsyncSend(): Exit
+2017-05-04 10:55:45.974 [TID#3295] [Debug] ProxyDiaConnection::sendMessage(): Exit
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Exit
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DiaCompoundConnection::doLoadBalanceSendMessage(): Exit
+2017-05-04 10:55:45.974 [TID#3295] [Debug] DefDiaStack::sendMessage(): Exit
+2017-05-04 10:55:45.974 [TID#3285] [Debug] ProxyDiaConnection::messageSendCompleted(): Enter
+2017-05-04 10:55:45.974 [TID#3285] [Debug] ProxyDiaConnection::messageSendCompleted(): succeed to send the message to peer
+2017-05-04 10:55:45.974 [TID#3285] [Debug] DefDiaStack::messageSendCompleted(): Enter
+2017-05-04 10:55:45.974 [TID#3285] [Debug] DefDiaStack::messageSendCompleted(): Exit
+2017-05-04 10:55:45.974 [TID#3285] [Debug] ProxyDiaConnection::messageSendCompleted(): Exit
+2017-05-04 10:55:45.977 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Enter
+2017-05-04 10:55:45.977 [TID#3285] [Info] DiaTcpConnection::dataReceived(): received 844 bytes from peer, total 0 bytes in buffer
+2017-05-04 10:55:45.977 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Enter
+2017-05-04 10:55:45.977 [TID#3285] [Debug] DiaMessageFactory::_createAnswer(): Exit
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaReadAndCutMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaReadAndCutMessage(): read a message: 
+<UDA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>16777259</hopByHopId>
+	<endToEndId>2333081643</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp></OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Extension>
+    <Extension>
+      <Extension>
+        <Extension>
+          <EPSLocationInformation>
+            <MMEName>slgserver.ks.rd</MMEName>
+          </EPSLocationInformation>
+        </Extension>
+      </Extension>
+    </Extension>
+  </Extension>
+  <Extension>
+    <AllIdentities>
+      <IMSPublicIdentity>SIP:13600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:311480136000184@ims.mnc480.mcc311.3gppnetwork.org</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:+2013600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>tel:+2013600000184</IMSPublicIdentity>
+    </AllIdentities>
+  </Extension>
+</Sh-Data>
+</UserDataAvp>
+</UDA> and length: 844
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaReadAndCutMessage(): Exit
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): succeed to receive a message
+
+<UDA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>16777259</hopByHopId>
+	<endToEndId>2333081643</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp></OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Extension>
+    <Extension>
+      <Extension>
+        <Extension>
+          <EPSLocationInformation>
+            <MMEName>slgserver.ks.rd</MMEName>
+          </EPSLocationInformation>
+        </Extension>
+      </Extension>
+    </Extension>
+  </Extension>
+  <Extension>
+    <AllIdentities>
+      <IMSPublicIdentity>SIP:13600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:311480136000184@ims.mnc480.mcc311.3gppnetwork.org</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:+2013600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>tel:+2013600000184</IMSPublicIdentity>
+    </AllIdentities>
+  </Extension>
+</Sh-Data>
+</UserDataAvp>
+</UDA>, still 0 bytes in buffer
+2017-05-04 10:55:45.978 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3285] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:45.978 [TID#3289] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3289] [Debug] ProxyDiaConnection::handleMessage: Enter
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaTcpConnection::startRead(): Enter
+2017-05-04 10:55:45.978 [TID#3289] [Debug] ProxyDiaConnection::handleMessage: Exit
+2017-05-04 10:55:45.978 [TID#3289] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:45.978 [TID#3291] [Debug] ProxyDiaConnection::processInMessage: Enter
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaTcpConnection::startRead(): Exit
+2017-05-04 10:55:45.978 [TID#3285] [Debug] DiaTcpConnection::dataReceived(): Exit
+2017-05-04 10:55:45.978 [TID#3291] [Debug] ProxyDiaConnection::processInMessage: handle the received answer in connection 0x18cfe10
+2017-05-04 10:55:45.978 [TID#3291] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:45.978 [TID#3291] [Debug] DiaRequestCallbackMgr::handleAnswer(): fail to found callback by hopByHopId 16777259 for local answer, discard answer
+2017-05-04 10:55:45.978 [TID#3291] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:45.978 [TID#3291] [Debug] ProxyDiaMessageHandler::handleMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3291] [Debug] ProxyDiaMessageHandler::handleMessage(): Exit
+2017-05-04 10:55:45.978 [TID#3291] [Debug] ProxyDiaConnection::processInMessage: Exit
+2017-05-04 10:55:45.978 [TID#3290] [Debug] ProxyDiaMessageHandler::processMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DefDiaStack::handleMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DefDiaStack::handleMessage(): an answer is received
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRequestCallbackMgr::handleAnswer(): found callback for local answer by hopByHopId 16777259, process answer
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): unmap the EndToEndId from new 2333081643 to old 2333081640
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Exit
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRetryRequestCallback::handleAnswer(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRetryRequestCallback::handleAnswer(): handle answer:
+<UDA>
+	<version>1</version>
+	<flags>0</flags>
+	<code>306</code>
+	<applicationId>16777217</applicationId>
+	<hopByHopId>16777259</hopByHopId>
+	<endToEndId>2333081640</endToEndId>
+	<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+	<ResultCodeAvp>2001</ResultCodeAvp>
+	<OriginHostAvp></OriginHostAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<VendorSpecificApplicationIdAvp>
+		<VendorIdAvp>10415</VendorIdAvp>
+		<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+	</VendorSpecificApplicationIdAvp>
+	<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Extension>
+    <Extension>
+      <Extension>
+        <Extension>
+          <EPSLocationInformation>
+            <MMEName>slgserver.ks.rd</MMEName>
+          </EPSLocationInformation>
+        </Extension>
+      </Extension>
+    </Extension>
+  </Extension>
+  <Extension>
+    <AllIdentities>
+      <IMSPublicIdentity>SIP:13600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:311480136000184@ims.mnc480.mcc311.3gppnetwork.org</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:+2013600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>tel:+2013600000184</IMSPublicIdentity>
+    </AllIdentities>
+  </Extension>
+</Sh-Data>
+</UserDataAvp>
+</UDA>
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaRetryRequestCallback::handleAnswer(): Exit
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): try to send answer to client
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaTcpClientMsgProcessor::sendMessage(): Enter
+2017-05-04 10:55:45.978 [TID#3290] [Debug] DiaTcpClientMsgProcessor::sendMessage(): try to send message 
+
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<UDA>
+			<version>1</version>
+			<flags>0</flags>
+			<code>306</code>
+			<applicationId>16777217</applicationId>
+			<hopByHopId>50331668</hopByHopId>
+			<endToEndId>2333081640</endToEndId>
+			<SessionIdAvp>1F51F72182B648519F0C9EB3C3A4D6F4;NLS@NSN,19</SessionIdAvp>
+			<ResultCodeAvp>2001</ResultCodeAvp>
+			<OriginHostAvp></OriginHostAvp>
+			<OriginRealmAvp>nsn.com</OriginRealmAvp>
+			<AuthSessionStateAvp>1</AuthSessionStateAvp>
+			<VendorSpecificApplicationIdAvp>
+				<VendorIdAvp>10415</VendorIdAvp>
+				<AuthApplicationIdAvp>16777217</AuthApplicationIdAvp>
+			</VendorSpecificApplicationIdAvp>
+			<UserDataAvp><?xml version="1.0"?>
+<Sh-Data>
+  <Extension>
+    <Extension>
+      <Extension>
+        <Extension>
+          <EPSLocationInformation>
+            <MMEName>slgserver.ks.rd</MMEName>
+          </EPSLocationInformation>
+        </Extension>
+      </Extension>
+    </Extension>
+  </Extension>
+  <Extension>
+    <AllIdentities>
+      <IMSPublicIdentity>SIP:13600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:311480136000184@ims.mnc480.mcc311.3gppnetwork.org</IMSPublicIdentity>
+      <IMSPublicIdentity>sip:+2013600000184@vzims.com</IMSPublicIdentity>
+      <IMSPublicIdentity>tel:+2013600000184</IMSPublicIdentity>
+    </AllIdentities>
+  </Extension>
+</Sh-Data>
+</UserDataAvp>
+		</UDA>
+	</DiaMsg>
+</DiaTcpClientStackMsg> to peer
+2017-05-04 10:55:45.979 [TID#3290] [Debug] DiaTcpClientMsgProcessor::sendMessage(): Exit
+2017-05-04 10:55:45.979 [TID#3290] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): Exit
+2017-05-04 10:55:45.979 [TID#3290] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:45.979 [TID#3290] [Debug] DefDiaStack::handleMessage(): Exit
+2017-05-04 10:55:45.979 [TID#3290] [Debug] ProxyDiaMessageHandler::processMessage(): Exit
+2017-05-04 10:55:46.027 [TID#3284] [Debug] DiaTcpClientMsgProcessor::startRecvMsg: Enter
+2017-05-04 10:55:46.027 [TID#3284] [Debug] DiaTcpClientMsgProcessor::startRecvMsg: Exit
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaTcpClientMsgProcessor::processMessage(): Enter
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaTcpClientMsgProcessor::processMessage(): start to process message:
+
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<PLR>
+			<version>1</version>
+			<flags>128</flags>
+			<code>8388620</code>
+			<applicationId>16777255</applicationId>
+			<hopByHopId>50331652</hopByHopId>
+			<endToEndId>2334130184</endToEndId>
+			<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+			<DestinationHostAvp>slgserver.ks.rd</DestinationHostAvp>
+			<UserNameAvp>311480136000184</UserNameAvp>
+			<MSISDNAvp>2013600000184</MSISDNAvp>
+			<LCSEPSClientNameAvp>
+				<LCSNameStringAvp>1234</LCSNameStringAvp>
+				<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+			</LCSEPSClientNameAvp>
+			<LCSClientTypeAvp>0</LCSClientTypeAvp>
+			<LCSRequestorNameAvp>
+				<LCSRequestorIDStringAvp>2013600000888</LCSRequestorIDStringAvp>
+				<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+			</LCSRequestorNameAvp>
+			<LCSPriorityAvp>0</LCSPriorityAvp>
+			<LCSQoSAvp>
+				<LCSQoSClassAvp>1</LCSQoSClassAvp>
+				<HorizontalAccuracyAvp>19</HorizontalAccuracyAvp>
+				<VerticalAccuracyAvp>127</VerticalAccuracyAvp>
+				<VerticalRequestedAvp>1</VerticalRequestedAvp>
+				<ResponseTimeAvp>1</ResponseTimeAvp>
+			</LCSQoSAvp>
+			<SupportedGADShapesAvp>32</SupportedGADShapesAvp>
+			<LCSServiceTypeIDAvp>0</LCSServiceTypeIDAvp>
+			<SlgLocationTypeAvp>0</SlgLocationTypeAvp>
+			<AuthSessionStateAvp>1</AuthSessionStateAvp>
+		</PLR>
+	</DiaMsg>
+</DiaTcpClientStackMsg> from client 10.68.96.43:25530
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaTcpClientMsgProcessor::processMessage(): Exit
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): Enter
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): received a diameter message:
+<PLR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>8388620</code>
+	<applicationId>16777255</applicationId>
+	<hopByHopId>50331652</hopByHopId>
+	<endToEndId>2334130184</endToEndId>
+	<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+	<DestinationHostAvp>slgserver.ks.rd</DestinationHostAvp>
+	<UserNameAvp>311480136000184</UserNameAvp>
+	<MSISDNAvp>2013600000184</MSISDNAvp>
+	<LCSEPSClientNameAvp>
+		<LCSNameStringAvp>1234</LCSNameStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSEPSClientNameAvp>
+	<LCSClientTypeAvp>0</LCSClientTypeAvp>
+	<LCSRequestorNameAvp>
+		<LCSRequestorIDStringAvp>2013600000888</LCSRequestorIDStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSRequestorNameAvp>
+	<LCSPriorityAvp>0</LCSPriorityAvp>
+	<LCSQoSAvp>
+		<LCSQoSClassAvp>1</LCSQoSClassAvp>
+		<HorizontalAccuracyAvp>19</HorizontalAccuracyAvp>
+		<VerticalAccuracyAvp>127</VerticalAccuracyAvp>
+		<VerticalRequestedAvp>1</VerticalRequestedAvp>
+		<ResponseTimeAvp>1</ResponseTimeAvp>
+	</LCSQoSAvp>
+	<SupportedGADShapesAvp>32</SupportedGADShapesAvp>
+	<LCSServiceTypeIDAvp>0</LCSServiceTypeIDAvp>
+	<SlgLocationTypeAvp>0</SlgLocationTypeAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+</PLR> from client 10.68.96.43:25530
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:46.027 [TID#3322] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DefDiaStack::forwardRequest(): Enter
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Enter
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaRetryRequestCallback::mapEndToEndId(): map the EndToEndId from old 2334130184 to new 2334130220
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Exit
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Enter
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaRequestCallbackMgr::addRequestCallback(): add callback of request with hopByHopId:16777260
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Exit
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DefDiaStack::forwardRequest(): Exit
+2017-05-04 10:55:46.028 [TID#3322] [Debug] DiaTcpClientMsgProcessor::diaMessageReceived(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::sendMessage(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::sendMessage(): try to send message out
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::getConnection( const DiaMessage& ): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::getConnection( const DiaMessage& ): extract the destination realm=, destination host=slgserver.ks.rd from message
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnection(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnection(): try to get the connection for realm=,host=slgserver.ks.rd
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getRealmHostConnection(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getRealmHostConnection(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getRealmConnection(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getRealmConnection(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnection(): fail to get connection by realm=, try to get connection by host name only
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnectionByHost(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Warning] DefDiaPeerTable::getConnectionByHost(): No connection is found by host=slgserver.ks.rd
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnectionByHost(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnection(): fail to get connection by realm=, host=slgserver.ks.rd
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaPeerTable::getConnection(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::getConnection( const DiaMessage& ): fail to find the connection by destRealm=, destHost=slgserver.ks.rd,appId=16777255, try to find default routing
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::getConnection( const DiaMessage& ): no default route connection
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::getConnection( const DiaMessage& ): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Error] DefDiaStack::sendMessage(): not find connection for diameter message:
+<PLR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>8388620</code>
+	<applicationId>16777255</applicationId>
+	<hopByHopId>16777260</hopByHopId>
+	<endToEndId>2334130220</endToEndId>
+	<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+	<DestinationHostAvp>slgserver.ks.rd</DestinationHostAvp>
+	<UserNameAvp>311480136000184</UserNameAvp>
+	<MSISDNAvp>2013600000184</MSISDNAvp>
+	<LCSEPSClientNameAvp>
+		<LCSNameStringAvp>1234</LCSNameStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSEPSClientNameAvp>
+	<LCSClientTypeAvp>0</LCSClientTypeAvp>
+	<LCSRequestorNameAvp>
+		<LCSRequestorIDStringAvp>2013600000888</LCSRequestorIDStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSRequestorNameAvp>
+	<LCSPriorityAvp>0</LCSPriorityAvp>
+	<LCSQoSAvp>
+		<LCSQoSClassAvp>1</LCSQoSClassAvp>
+		<HorizontalAccuracyAvp>19</HorizontalAccuracyAvp>
+		<VerticalAccuracyAvp>127</VerticalAccuracyAvp>
+		<VerticalRequestedAvp>1</VerticalRequestedAvp>
+		<ResponseTimeAvp>1</ResponseTimeAvp>
+	</LCSQoSAvp>
+	<SupportedGADShapesAvp>32</SupportedGADShapesAvp>
+	<LCSServiceTypeIDAvp>0</LCSServiceTypeIDAvp>
+	<SlgLocationTypeAvp>0</SlgLocationTypeAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<OriginHostAvp>proxy</OriginHostAvp>
+</PLR>
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DefDiaStack::messageSendCompleted(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Error] DefDiaStack::messageSendCompleted(): fail to send message 
+<PLR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>8388620</code>
+	<applicationId>16777255</applicationId>
+	<hopByHopId>16777260</hopByHopId>
+	<endToEndId>2334130220</endToEndId>
+	<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+	<DestinationHostAvp>slgserver.ks.rd</DestinationHostAvp>
+	<UserNameAvp>311480136000184</UserNameAvp>
+	<MSISDNAvp>2013600000184</MSISDNAvp>
+	<LCSEPSClientNameAvp>
+		<LCSNameStringAvp>1234</LCSNameStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSEPSClientNameAvp>
+	<LCSClientTypeAvp>0</LCSClientTypeAvp>
+	<LCSRequestorNameAvp>
+		<LCSRequestorIDStringAvp>2013600000888</LCSRequestorIDStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSRequestorNameAvp>
+	<LCSPriorityAvp>0</LCSPriorityAvp>
+	<LCSQoSAvp>
+		<LCSQoSClassAvp>1</LCSQoSClassAvp>
+		<HorizontalAccuracyAvp>19</HorizontalAccuracyAvp>
+		<VerticalAccuracyAvp>127</VerticalAccuracyAvp>
+		<VerticalRequestedAvp>1</VerticalRequestedAvp>
+		<ResponseTimeAvp>1</ResponseTimeAvp>
+	</LCSQoSAvp>
+	<SupportedGADShapesAvp>32</SupportedGADShapesAvp>
+	<LCSServiceTypeIDAvp>0</LCSServiceTypeIDAvp>
+	<SlgLocationTypeAvp>0</SlgLocationTypeAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<OriginRealmAvp>nsn.com</OriginRealmAvp>
+	<OriginHostAvp>proxy</OriginHostAvp>
+</PLR>
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRequestCallbackMgr::handleAnswer(): found callback for local answer by hopByHopId 16777260, process answer
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): unmap the EndToEndId from new 2334130220 to old 2334130184
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRetryRequestCallback::handleAnswer(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRetryRequestCallback::handleAnswer(): handle answer:
+<answer>
+	<version>1</version>
+	<flags>32</flags>
+	<code>8388620</code>
+	<applicationId>16777255</applicationId>
+	<hopByHopId>16777260</hopByHopId>
+	<endToEndId>2334130184</endToEndId>
+	<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+	<OriginRealmAvp>proxy</OriginRealmAvp>
+	<ResultCodeAvp>3002</ResultCodeAvp>
+</answer>
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaRetryRequestCallback::handleAnswer(): Exit
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): try to send answer to client
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaTcpClientMsgProcessor::sendMessage(): Enter
+2017-05-04 10:55:46.028 [TID#3308] [Debug] DiaTcpClientMsgProcessor::sendMessage(): try to send message 
+
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<answer>
+			<version>1</version>
+			<flags>32</flags>
+			<code>8388620</code>
+			<applicationId>16777255</applicationId>
+			<hopByHopId>50331652</hopByHopId>
+			<endToEndId>2334130184</endToEndId>
+			<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+			<OriginRealmAvp>proxy</OriginRealmAvp>
+			<ResultCodeAvp>3002</ResultCodeAvp>
+		</answer>
+	</DiaMsg>
+</DiaTcpClientStackMsg> to peer
+2017-05-04 10:55:46.029 [TID#3308] [Debug] DiaTcpClientMsgProcessor::sendMessage(): Exit
+2017-05-04 10:55:46.029 [TID#3308] [Debug] DiaTcpClientMsgProcessor::handleAnswer(): Exit
+2017-05-04 10:55:46.029 [TID#3308] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:46.029 [TID#3308] [Debug] DefDiaStack::messageSendCompleted(): Exit
+2017-05-04 10:55:46.029 [TID#3308] [Debug] DefDiaStack::sendMessage(): Exit
+2017-05-04 10:55:46.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:46.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:46.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:47.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:47.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:47.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:48.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:48.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:48.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:49.287 [TID#3343] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:49.287 [TID#3340] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages
+2017-05-04 10:55:49.287 [TID#3337] [Debug] DiaHAConfigMulticaster::takeAndProcessHaMessage(): still have 0 received messages

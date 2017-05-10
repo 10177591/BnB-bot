@@ -1,0 +1,131 @@
+2017-05-04 10:55:37.788 [TID#3354] [Debug] Message with length 28 is writing into [tMLEInterface]
+2017-05-04 10:55:37.788 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 28
+2017-05-04 10:55:37.789 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 10:55:37.789 [TID#3351] [Debug] receive mle link check response message. type: 0x1037
+2017-05-04 10:55:38.286 [TID#3359] [Debug] Message with length 41 is writing into [tSUPLInterface]
+2017-05-04 10:55:38.286 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 41
+2017-05-04 10:55:38.286 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 10:55:38.286 [TID#3357] [Debug] Recv LG msgType(100C) MsgID: Session:0
+2017-05-04 10:55:38.286 [TID#3357] [Debug] Got message from SPU, type: 0x100c
+2017-05-04 10:55:38.424 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 10:55:38.424 [TID#3349] [Debug] Recv LG msgType(100B) MsgID: Session:0
+2017-05-04 10:55:38.424 [TID#3349] [Debug] receive glc link check request message. type: 0x100b
+2017-05-04 10:55:38.424 [TID#3349] [Debug] Message with length 41 is writing into [tGLCInterface]
+2017-05-04 10:55:38.424 [TID#3349] [Debug] [tGLCInterface]: LinkCheckRequest has been processed!
+2017-05-04 10:55:38.425 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 41
+2017-05-04 10:55:43.789 [TID#3354] [Debug] Message with length 28 is writing into [tMLEInterface]
+2017-05-04 10:55:43.789 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 28
+2017-05-04 10:55:43.790 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 10:55:43.790 [TID#3351] [Debug] receive mle link check response message. type: 0x1037
+2017-05-04 10:55:44.142 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 10:55:44.142 [TID#3349] [Info] LE1F287050410554405D Recv INTMSG_LG_NI_GLC_LC_AGPSINSTANT_REQUEST. sessionId: 20f0adec, setIdType: 6, setId: 10.68.96.43
+2017-05-04 10:55:44.142 [TID#3349] [Debug] _AGPS_INS_REQUEST:
+{
+  msgHeader:
+  {
+    length: 780,
+    msgType: 0x1032,
+    sessionId: 552644076, // [raw: 0x20f0adec]
+    version: 1,
+    malsMsgId: LE1F287050410554405D,
+  },
+  inputSetIdType: 4,
+  inputSetId: 311480136000184,
+  setIdType: 6,
+  setId: 10.68.96.43,
+  notify_type: 0,
+  position_method: 0,
+  qop:
+  {
+    resp_req_present: 0,
+    resp_req: 0,
+    resp_timer_present: 1,
+    resp_timer: 2,
+    hor_acc_present: 1,
+    hor_acc_meters: 50,
+    alt_acc_present: 0,
+    alt_acc_meters: 0,
+    max_loc_age_present: 0,
+    max_loc_age: 0,
+  },
+  reserved: 65797,0,131075,1,
+  is_emergence: 1,
+},
+2017-05-04 10:55:44.142 [TID#3349] [Info] receive glc message. type: 0x1032, sessionId: 20f0adec, dest: U, dest type: 0x1034
+2017-05-04 10:55:44.142 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tSUPLInterface]
+2017-05-04 10:55:44.142 [TID#3357] [Debug] [tSUPLInterface]: bool SUPLInterfaceLayer::processSUPLMessageOut(InterfaceMessage*)
+2017-05-04 10:55:44.142 [TID#3357] [Debug] Recv LG msgType(1034) MsgID:LE1F287050410554405D Session:20F0ADEC
+2017-05-04 10:55:44.142 [TID#3357] [Debug] Message with length 780 is writing into [tSUPLInterface]
+2017-05-04 10:55:44.142 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 780
+2017-05-04 10:55:44.286 [TID#3359] [Debug] Message with length 41 is writing into [tSUPLInterface]
+2017-05-04 10:55:44.287 [TID#3365] [Debug] wrote to [tSUPLInterface] socket id: 0, socket, status: 41
+2017-05-04 10:55:44.287 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 10:55:44.287 [TID#3357] [Debug] Recv LG msgType(100C) MsgID: Session:0
+2017-05-04 10:55:44.287 [TID#3357] [Debug] Got message from SPU, type: 0x100c
+2017-05-04 10:55:45.933 [TID#3357] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tSUPLInterface]
+2017-05-04 10:55:45.933 [TID#3357] [Info] LE1F287050410554405D Recv INTMSG_LG_NI_LC_SPU_AGPSINSTANT_RESPONSE. sessionId: a0f0adec, setIdType: 255, setId: , result: 789
+2017-05-04 10:55:45.933 [TID#3357] [Debug] _AGPS_INS_RESPONSE :
+{
+  msgHeader:
+  {
+    length: 480,
+    msgType: 0x1035,
+    sessionId: 2700127724, // [raw: 0xa0f0adec]
+    version: 1,
+    malsMsgId: LE1F287050410554405D,
+  },
+  position_method:,
+  {
+    nettype: 0, //[hex: 00]
+    assist: COMM_PA_MSA, 
+    proto: 0, //[hex: 00]
+    method: 0, //[hex: 00]
+  },
+  result: 
+  {
+    result_code: 789,
+    supl_code: 9,
+    shape:
+    {
+      utc_timestamp: 0,
+      express_type: 0,
+      lat_sign: 0,
+      latitude: 0,
+      longitude: 0,
+      alt_direction: 0,
+      altitude: 0,
+      semi_major_in_meters: 0.000000,
+      semi_minor_in_meters: 0.000000,
+      orientation_major_axis: 0,
+      confidence: 0,
+      alt_uncertainty_in_meters: 0.000000,
+      velocity_present: 0,
+      velocity:
+      {
+        type: 0,
+        bearing: 0,
+        hor_spd: 0,
+        ver_spd: 0,
+        ver_spd_dir: 0,
+        hor_uncert_spd: 0,
+        ver_uncert_spd: 0,
+      },
+    },
+  },
+}
+2017-05-04 10:55:45.933 [TID#3357] [Debug] Got message from SPU, type: 0x1035
+2017-05-04 10:55:45.933 [TID#3357] [Debug] Forward Layer: G
+2017-05-04 10:55:45.933 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008001] for layer [tGLCInterface]
+2017-05-04 10:55:45.933 [TID#3349] [Debug] Recv LG msgType(1033) MsgID:LE1F287050410554405D Session:20F0ADEC
+2017-05-04 10:55:45.933 [TID#3349] [Debug] Message with length 480 is writing into [tGLCInterface]
+2017-05-04 10:55:45.933 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 480
+2017-05-04 10:55:48.424 [TID#3349] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tGLCInterface]
+2017-05-04 10:55:48.424 [TID#3349] [Debug] Recv LG msgType(100B) MsgID: Session:0
+2017-05-04 10:55:48.424 [TID#3349] [Debug] receive glc link check request message. type: 0x100b
+2017-05-04 10:55:48.424 [TID#3349] [Debug] Message with length 41 is writing into [tGLCInterface]
+2017-05-04 10:55:48.424 [TID#3349] [Debug] [tGLCInterface]: LinkCheckRequest has been processed!
+2017-05-04 10:55:48.425 [TID#3355] [Debug] wrote to [tGLCInterface] socket id: 0, socket, status: 41
+2017-05-04 10:55:49.790 [TID#3354] [Debug] Message with length 28 is writing into [tMLEInterface]
+2017-05-04 10:55:49.790 [TID#3367] [Debug] wrote to [tMLEInterface] socket id: 0, socket, status: 28
+2017-05-04 10:55:49.791 [TID#3351] [Debug] 00000180,void Layer::waitForEvent(): received CommandEvent [00008000] for layer [tMLEInterface]
+2017-05-04 10:55:49.791 [TID#3351] [Debug] receive mle link check response message. type: 0x1037

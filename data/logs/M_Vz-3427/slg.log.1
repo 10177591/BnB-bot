@@ -1,0 +1,177 @@
+2017-05-04 10:55:46.024 [TID#3411] [Debug] AbsChannel::internalRecv(): received a message from queue:slgExecutor:group_type:plr in cluster slgExecutor
+2017-05-04 10:55:46.024 [TID#3411] [Debug] AbsChannel::internalRecv(): Exit
+2017-05-04 10:55:46.024 [TID#3411] [Debug] RedoCmdExecutorServer::processMessage(): Enter
+2017-05-04 10:55:46.024 [TID#3411] [Debug] RedoCmdExecutorServer::processMessage(): Exit
+2017-05-04 10:55:46.024 [TID#3411] [Debug] AbsChannel::internalRecv(): Enter
+2017-05-04 10:55:46.024 [TID#3411] [Debug] AbsChannel::internalRecv(): try to receive any cluster messages and any my own message in cluster slgExecutor
+2017-05-04 10:55:46.025 [TID#3413] [Debug] RedoCmdExecutorServer::msgReceived(): Enter
+2017-05-04 10:55:46.025 [TID#3413] [Debug] RedoCmdExecutorServer::msgReceived(): redoCmdMgr_.size()=1
+2017-05-04 10:55:46.025 [TID#3413] [Debug] SLGServer::handleRequest: Enter
+2017-05-04 10:55:46.025 [TID#3413] [Info] SLGServer::handleRequest: executeCmd:get request
+2017-05-04 10:55:46.025 [TID#3413] [Debug] SLGServer::handleRequest: Incoming PLR:0
+2017-05-04 10:55:46.025 [TID#3413] [Debug] DiaMessageFactory::_createRequest(): Enter
+2017-05-04 10:55:46.025 [TID#3413] [Debug] DiaMessageFactory::_createRequest(): Exit
+2017-05-04 10:55:46.025 [TID#3413] [Info] SLGServer::handleRequest: TLR id=LE1F287050410554405D:20
+2017-05-04 10:55:46.025 [TID#3413] [Debug] SLGServer::convertPLRLocationType: Enter
+2017-05-04 10:55:46.025 [TID#3413] [Debug] SLGServer::convertPLRLocationType: maping from 1 to 0
+2017-05-04 10:55:46.025 [TID#3413] [Debug] SLGServer::convertPLRLocationType: Exit
+2017-05-04 10:55:46.025 [TID#3413] [Debug] SLGServer::handleRequest: Exit
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SLGDiaHandler::handleRequest: Enter
+2017-05-04 10:55:46.025 [TID#3413] [Debug] RedoCmdExecutorServer::msgReceived(): Exit
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SLGDiaHandler::handleRequest: check the request message
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SLGDiaHandler::handleRequest: check the seesion6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SlgRedisCache::getMME(): Enter
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SlgRedisCache::getKey(): Enter
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SlgRedisCache::getValue(): Enter
+2017-05-04 10:55:46.025 [TID#3402] [Info] SlgRedisCache::getValue(): imsi-mme:311480136000184 Key not exist
+2017-05-04 10:55:46.025 [TID#3402] [Debug] SlgRedisCache::getValue(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgRedisCache::getValue(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Info] SlgRedisCache::getValue(): msisdn-mme:2013600000184 Key not exist
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgRedisCache::getValue(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgRedisCache::getKey(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgRedisCache::getMME(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgTlrAgent::sendSlgTransLog: Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgTlrAgent::sendSlgTransLog: the TLR session id: LE1F287050410554405D
+2017-05-04 10:55:46.026 [TID#3402] [Debug] TLRAgentImpl::AsyncSend(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] TLRAgentImpl::AsyncSend(): tlragent send1: transid=LE1F287050410554405D,xpath=Trans/Messages/SLG/PLR,pathlen=23,datalen=1197,data=refer to translog,end=0,type=0,second=1493895346, millisecond=26
+2017-05-04 10:55:46.026 [TID#3402] [Debug] TLRAgentImpl::AsyncSend(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SlgTlrAgent::sendSlgTransLog: Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SLGDiaHandler::printInfo: Enter
+2017-05-04 10:55:46.026 [TID#3402] [Info] SLGDiaHandler::printInfo: PLR TLR=LE1F287050410554405D
+2017-05-04 10:55:46.026 [TID#3402] [Info] SLGDiaHandler::printInfo: Sessionid=6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3
+2017-05-04 10:55:46.026 [TID#3402] [Info] SLGDiaHandler::printInfo: DestinationHost=slgserver.ks.rd
+2017-05-04 10:55:46.026 [TID#3402] [Info] SLGDiaHandler::printInfo: IMSI = 311480136000184
+2017-05-04 10:55:46.026 [TID#3402] [Info] SLGDiaHandler::printInfo: MSISDN = 2013600000184
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SLGDiaHandler::printInfo: Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SLGStatistic::peg: Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] NetworkManagementHandler::sendMultiStatisticsData()
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SLGStatistic::peg: SLG statistic value pegged
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SLGStatistic::peg: Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::sendRequest(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::retrySendRequest(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaRetryRequestCallback::mapEndToEndId(): map the EndToEndId from old 2334130183 to new 2334130184
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaRetryRequestCallback::mapEndToEndId(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaRequestCallbackMgr::addRequestCallback(): add callback of request with hopByHopId:50331652
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaRequestCallbackMgr::addRequestCallback(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::retrySendRequest(): try to send request:
+<PLR>
+	<version>1</version>
+	<flags>128</flags>
+	<code>8388620</code>
+	<applicationId>16777255</applicationId>
+	<hopByHopId>50331652</hopByHopId>
+	<endToEndId>2334130184</endToEndId>
+	<DestinationHostAvp>slgserver.ks.rd</DestinationHostAvp>
+	<UserNameAvp>311480136000184</UserNameAvp>
+	<MSISDNAvp>2013600000184</MSISDNAvp>
+	<LCSEPSClientNameAvp>
+		<LCSNameStringAvp>1234</LCSNameStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSEPSClientNameAvp>
+	<LCSClientTypeAvp>0</LCSClientTypeAvp>
+	<LCSRequestorNameAvp>
+		<LCSRequestorIDStringAvp>2013600000888</LCSRequestorIDStringAvp>
+		<LCSFormatIndicatorAvp>0</LCSFormatIndicatorAvp>
+	</LCSRequestorNameAvp>
+	<LCSPriorityAvp>0</LCSPriorityAvp>
+	<LCSQoSAvp>
+		<LCSQoSClassAvp>1</LCSQoSClassAvp>
+		<HorizontalAccuracyAvp>19</HorizontalAccuracyAvp>
+		<VerticalAccuracyAvp>127</VerticalAccuracyAvp>
+		<VerticalRequestedAvp>1</VerticalRequestedAvp>
+		<ResponseTimeAvp>1</ResponseTimeAvp>
+	</LCSQoSAvp>
+	<SupportedGADShapesAvp>32</SupportedGADShapesAvp>
+	<LCSServiceTypeIDAvp>0</LCSServiceTypeIDAvp>
+	<SlgLocationTypeAvp>0</SlgLocationTypeAvp>
+	<AuthSessionStateAvp>1</AuthSessionStateAvp>
+	<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+</PLR>
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::retrySendRequest(): try to send request:0x76dda0 through connection:0x7fa054000a40
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::ConnInfo::sendMessage(): Enter
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::ConnInfo::sendMessage(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::retrySendRequest(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] DiaTcpClientStack::sendRequest(): Exit
+2017-05-04 10:55:46.026 [TID#3402] [Debug] SLGDiaHandler::handleRequest: Exit
+2017-05-04 10:55:46.027 [TID#3353] [Debug] DiaTcpClientStack::handleRequestResult(): Enter
+2017-05-04 10:55:46.027 [TID#3353] [Debug] DiaTcpClientStack::handleRequestResult(): Exit
+2017-05-04 10:55:46.029 [TID#3353] [Debug] DiaTcpClientStack::ConnInfo::startReadMessage(): Enter
+2017-05-04 10:55:46.029 [TID#3353] [Debug] DiaTcpClientStack::ConnInfo::startReadMessage(): Enter
+2017-05-04 10:55:46.029 [TID#3353] [Debug] DiaTcpClientStack::ConnInfo::startReadMessage(): Exit
+2017-05-04 10:55:46.029 [TID#3353] [Debug] DiaTcpClientStack::ConnInfo::startReadMessage(): Exit
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaMessageFactory::_createAnswer(): Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaMessageFactory::_createAnswer(): Exit
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaTcpClientStack::processMessage(): Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaTcpClientStack::processMessage(): receied a message:
+<DiaTcpClientStackMsg>
+	<DiaMsg>
+		<PLA>
+			<version>1</version>
+			<flags>32</flags>
+			<code>8388620</code>
+			<applicationId>16777255</applicationId>
+			<hopByHopId>50331652</hopByHopId>
+			<endToEndId>2334130184</endToEndId>
+			<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+			<ResultCodeAvp>3002</ResultCodeAvp>
+			<OriginRealmAvp>proxy</OriginRealmAvp>
+		</PLA>
+	</DiaMsg>
+</DiaTcpClientStackMsg> from server clu-dpa-1-vip:7891
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRequestCallbackMgr::handleAnswer(): Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRequestCallbackMgr::handleAnswer(): found callback for local answer by hopByHopId 50331652, process answer
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): unmap the EndToEndId from new 2334130184 to old 2334130183
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRetryRequestCallback::unmapEndToEndId(): Exit
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRetryRequestCallback::handleAnswer(): Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRetryRequestCallback::handleAnswer(): handle answer:
+<PLA>
+	<version>1</version>
+	<flags>32</flags>
+	<code>8388620</code>
+	<applicationId>16777255</applicationId>
+	<hopByHopId>50331652</hopByHopId>
+	<endToEndId>2334130183</endToEndId>
+	<SessionIdAvp>6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3</SessionIdAvp>
+	<ResultCodeAvp>3002</ResultCodeAvp>
+	<OriginRealmAvp>proxy</OriginRealmAvp>
+</PLA>
+2017-05-04 10:55:46.029 [TID#3370] [Debug] DiaRetryRequestCallback::handleAnswer(): Exit
+2017-05-04 10:55:46.029 [TID#3370] [Debug] PLRDiaRequestCallback::handleAnswer: Enter
+2017-05-04 10:55:46.029 [TID#3370] [Info] PLRDiaRequestCallback::handleAnswer: receive PLA SessionId=6E9AF90481124C6287DF4F5A5E579239;NLS@NSN3
+2017-05-04 10:55:46.029 [TID#3370] [Info] PLRDiaRequestCallback::handleAnswer: resultcode=3002
+2017-05-04 10:55:46.029 [TID#3370] [Info] PLRDiaRequestCallback::handleAnswer: OriginRealm=proxy
+2017-05-04 10:55:46.029 [TID#3370] [Debug] PLRDiaRequestCallback::handleAnswer: get pla result 
+2017-05-04 10:55:46.029 [TID#3370] [Debug]  PLRDiaRequestCallback::doRetry: Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug]  PLRDiaRequestCallback::doRetry: Exit
+2017-05-04 10:55:46.029 [TID#3370] [Debug] PLRDiaRequestCallback::handleAnswer: write tlr: lefttime:0 requestime:20
+2017-05-04 10:55:46.029 [TID#3370] [Debug] SlgTlrAgent::sendSlgTransLog: Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] SlgTlrAgent::sendSlgTransLog: the TLR session id: LE1F287050410554405D
+2017-05-04 10:55:46.029 [TID#3370] [Debug] TLRAgentImpl::AsyncSend(): Enter
+2017-05-04 10:55:46.029 [TID#3370] [Debug] TLRAgentImpl::AsyncSend(): tlragent send1: transid=LE1F287050410554405D,xpath=Trans/Messages/SLG/PLA,pathlen=23,datalen=326,data=refer to translog,end=1,type=0,second=1493895346, millisecond=29
+2017-05-04 10:55:46.029 [TID#3370] [Debug] TLRAgentImpl::AsyncSend(): Exit
+2017-05-04 10:55:46.029 [TID#3370] [Debug] SlgTlrAgent::sendSlgTransLog: Exit
+2017-05-04 10:55:46.030 [TID#3370] [Debug] AbsChannel::send(): Enter
+2017-05-04 10:55:46.030 [TID#3370] [Debug] AbsChannel::send(): try to send message to node DB0B4C4829784DFB93EC343B9266349E in the cluster slgExecutor
+2017-05-04 10:55:46.030 [TID#3370] [Debug] RedisConnectionPool::alloc(): Enter
+2017-05-04 10:55:46.030 [TID#3370] [Debug] RedisConnectionPool::alloc(): no connection list exists for RedisClient 0x759100
+2017-05-04 10:55:46.030 [TID#3370] [Debug] RedisConnectionPool::alloc(): Exit
+2017-05-04 10:55:46.030 [TID#3370] [Debug] RedisClient::createConnection(): Enter
+2017-05-04 10:55:46.030 [TID#3370] [Debug] RedisClient::createConnection():  config_.getServerCount()=2
+2017-05-04 10:55:46.030 [TID#3370] [Info] RedisClient::createConnection(): try to connect one of redis: clu-redis-1-vip:6379,clu-redis-2-vip:6379
+2017-05-04 10:55:46.030 [TID#3370] [Debug] RedisConnection::RedisConnection(): Enter
+2017-05-04 10:55:46.031 [TID#3370] [Info] RedisConnection::RedisConnection(): connection 0x7fa0640071c0 succeed to connect the clu-redis-1-vip:6379
+2017-05-04 10:55:46.031 [TID#3370] [Debug] RedisConnection::RedisConnection(): Exit
+2017-05-04 10:55:46.031 [TID#3370] [Info] RedisClient::createConnection(): connect the redis host clu-redis-1-vip and port 6379 successfully
+2017-05-04 10:55:46.031 [TID#3370] [Debug] RedisClient::createConnection(): Exit
+2017-05-04 10:55:46.031 [TID#3370] [Debug] AbsChannel::send(): Exit
+2017-05-04 10:55:46.031 [TID#3370] [Debug] PLRDiaRequestCallback::checkNextConcurrentMsg: Enter
+2017-05-04 10:55:46.031 [TID#3370] [Debug] PLRDiaRequestCallback::checkNextConcurrentMsg: check the delay message.whether or not to be send. IMSI: 311480136000184
+2017-05-04 10:55:46.031 [TID#3370] [Debug] PLRDiaRequestCallback::checkNextConcurrentMsg: Exit
+2017-05-04 10:55:46.031 [TID#3370] [Debug] PLRDiaRequestCallback::handleAnswer: Exit
+2017-05-04 10:55:46.031 [TID#3370] [Debug] DiaRequestCallbackMgr::handleAnswer(): Exit
+2017-05-04 10:55:46.031 [TID#3370] [Debug] DiaTcpClientStack::processMessage(): Exit
+2017-05-04 10:55:46.107 [TID#3347] [Debug]  TLRAgentImpl::doSend(): succeed to send data to TLR with 1271 bytes
+2017-05-04 10:55:46.107 [TID#3347] [Debug]  TLRAgentImpl::doSend(): succeed to send data to TLR with 400 bytes

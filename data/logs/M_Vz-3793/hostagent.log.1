@@ -1,0 +1,39 @@
+2017-05-04 11:38:06.101 [TID#2274] [Debug] RedisConnectionPool::handleExpireCheckTimeout(): Enter
+2017-05-04 11:38:06.101 [TID#2274] [Debug] RedisConnectionPool::handleExpireCheckTimeout(): Exit
+2017-05-04 11:38:07.706 [TID#3555] [Debug] system ./redis_status.sh success, return 1
+2017-05-04 11:38:07.706 [TID#3555] [Debug] [send clear alarm]: send REDIS SERVER shutdown clear alarm
+2017-05-04 11:38:07.706 [TID#3555] [Debug] NetworkManagementHandler::sendAlarmData(), start to send alarm data to NMS
+2017-05-04 11:38:07.706 [TID#3555] [Debug] NetworkManagementHandler::sendAlarmData(), send PerEvent alarm to NMS
+2017-05-04 11:38:07.706 [TID#3555] [Debug] AlarmManagementHandler::sendAlarmData()
+2017-05-04 11:38:07.706 [TID#3555] [Debug] Init ctxt success
+
+2017-05-04 11:38:07.707 [TID#3555] [Debug] encoded message:
+ULP_PDU {
+   alarm {
+      id = 1113
+      detail = 
+54 68 65 20 63 6f 75 70 6c 65 20 52 65 64 69 73  The couple Redis
+20 53 65 72 76 65 72 73 20 61 72 65 20 73 68 75   Servers are shu
+74 64 6f 77 6e 20 61 6c 61 72 6d 20 63 6c 65 61  tdown alarm clea
+72 65 64                                         red
+      severity = clear
+      hostname = 0x666c6f617465642d686f73746167656e74
+      processtype = 0x484f5354
+      createTime = '20170504113807Z'
+   }
+}
+
+2017-05-04 11:38:07.707 [TID#3555] [Debug] Encoding success
+2017-05-04 11:38:07.747 [TID#2093] [Debug] receive message:NM_LINK_RESPONSE
+2017-05-04 11:38:08.448 [TID#5286] [Debug] TPSAlarmMonitor: pre_alarm_count = [1]
+2017-05-04 11:38:08.448 [TID#5286] [Debug] TPSAlarmMonitor: alarm_id = [1202], current_count = [0]
+2017-05-04 11:38:08.448 [TID#5286] [Debug] TPSAlarmMonitor: Raisethresholdvalue = [101], Clearthresholdvalue = [100], AlarmClearMethod = [1]
+2017-05-04 11:38:08.448 [TID#5286] [Debug] TPSAlarmMonitor: countInfo.BladeAlarmId = [1202] for getting AlarmRaiseClearInfo pointer
+2017-05-04 11:38:08.448 [TID#5286] [Debug] TPSAlarmMonitor: alarm_id = [1202], current_count = [0], Raisethresholdvalue = [101], Clearthresholdvalue = [100], pRaiseClearInfo = [(nil)], AlarmClearMethod = [1]
+2017-05-04 11:38:08.448 [TID#5286] [Debug] TPSAlarmMonitor: reset the alarm count and alarm raise, clear flag
+2017-05-04 11:38:18.449 [TID#5286] [Debug] TPSAlarmMonitor: pre_alarm_count = [1]
+2017-05-04 11:38:18.449 [TID#5286] [Debug] TPSAlarmMonitor: alarm_id = [1202], current_count = [1]
+2017-05-04 11:38:18.449 [TID#5286] [Debug] TPSAlarmMonitor: Raisethresholdvalue = [101], Clearthresholdvalue = [100], AlarmClearMethod = [1]
+2017-05-04 11:38:18.449 [TID#5286] [Debug] TPSAlarmMonitor: countInfo.BladeAlarmId = [1202] for getting AlarmRaiseClearInfo pointer
+2017-05-04 11:38:18.449 [TID#5286] [Debug] TPSAlarmMonitor: alarm_id = [1202], current_count = [1], Raisethresholdvalue = [101], Clearthresholdvalue = [100], pRaiseClearInfo = [(nil)], AlarmClearMethod = [1]
+2017-05-04 11:38:18.449 [TID#5286] [Debug] TPSAlarmMonitor: reset the alarm count and alarm raise, clear flag

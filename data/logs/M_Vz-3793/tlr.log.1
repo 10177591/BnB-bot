@@ -1,0 +1,306 @@
+2017-05-04 11:38:17.608 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 114 bytes
+2017-05-04 11:38:17.608 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/ULP/SUPLINIT
+	dataType:ULP
+	data:00270200024418002090be3ad71073e33068d320d05000080a0019008484107e3ad71074dec000
+	dir:DOWN_LINK
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:579
+}
+2017-05-04 11:38:17.628 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 606 bytes
+2017-05-04 11:38:17.628 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 68 bytes
+2017-05-04 11:38:17.628 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/MLP/EME_LIR
+	dataType:XML
+	data:<svc_init ver="3.3.0"><hdr ver="3.3.0"><client><id>1234</id><pwd>1234</pwd></client><requestor><id>2013600000888</id></requestor></hdr><eme_lir ver="3.3.0" res_type="SYNC"><msid enc="ASC" type="MSISDN">2013600000319</msid><gsm_net_param><ta>3</ta></gsm_net_param><supl_support_params><ip_address>10.68.96.43</ip_address></supl_support_params><eqop><resp_req type="LOW_DELAY"/><hor_acc qos_class="BEST_EFFORT">100</hor_acc></eqop><loc_type type="CURRENT_OR_LAST"/><NSN_SupportedShapes NSN_CircularArea = "YES" /></eme_lir></svc_init>
+	dir:DOWN_LINK
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:543
+}
+2017-05-04 11:38:17.628 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Misc/ACA
+	dataType:XML
+	data:IGNORE
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:623
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 227 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 876 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/ULP/SUPLPOSINIT
+	dataType:ULP
+	data:0095020000c0004008c41800004fe7fc418002090be3ad71073e33068d323d88580101047b6c3f0c2a083210844800e27210c2800018156c81473a600f004024a40077c80dee2208e8e06008a7b045cf412e1c0ffc001eec44228901c0404040000097c8140600106210c2800018156b601b0055c00eae000000001ffffffc0827c1e0000000004200625f3a701a9c65c580808000
+	dir:UP_LINK
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:621
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/ULP/SUPLPOS
+	dataType:ULP
+	data:0322020000c0004008c41800004fe7fc418002090be3ad71073e33068d3242020c01205dd240a30477040117031aa8002ed9603add0a00d76cd80115a429205fa0b19ea01ec00301a6640e88002ff45a13ea800508661a95b7245975e967838d0f802202b804fa8efa7a01421a36a44fba1d4256a5a64766e000813eae3c583e9f005086a7915c70583727acf7e0439802206a3aef956fa76014218b0a5b06f459081a91ab5336018820aecc2e33e9f0050866e3ebd4444cb68d3a2b3ab17fe20a7892fa42fa8a01421a304bafdcd42c9d4dc769065ff883161ccacf3ea60050863ee9bfda8248a88d5acc45980220ec8ef482cfabc01421a31adc9fa0e0b09fd5a7d0020008447bf4da83eaa0050864fe9398d60f8b5fefd0dca7800212b8db04e2fa7601421a3efcb6d93d2d83657620f5e0008534eaae27be8b0050866c23db5b5552ae8f6cd52eb7fe2164391310cfa9c01421bebfd13410440e81fd50712600086147e4e1e3eb48050868255f8f6e8c0de3b64c74d580021a67972f26fac6014218d155b6e6574028fc14733520008711f340ffbea30050860dd3a3d94124a635123cba280021e6cfd3222faa001421a13fe8dc2fec31d63ec58c26000881e2246a2bead8050868f94d32b113f79c56128c837fe222da7eefcafa6001421a1afbcdc84ea12f8e22a533e008892246c5c4beac0050861f95e7c4c3634134676cae67fe2265160f05afa5801421a1ef76d89695417ab869910e0008a4e7e3c483e9c00508630a98b5e122f0f7963e6b1380022a641aecd2fa58014219d0fc14485bbad74bba4125a0008b2062c5cc3eaa00508655d45e1282ae1bac5d744d27fe2301ba9227cfa8401421a93fa4cf73723cbbafbe708e0008cd5adcd513eb38050867e55d96558623929524026680623563b9334afaaa01421af9a2b580a7ea74ed7a5966e0088dc9264c003ea680508655ffc68a9ac38f51636349b80223825311b3cfab60142188053ff72a3fe47fa34bb5320088f1fdccc75bea80050866fe9cf092e72708bd451d0180223ec1730c6cfa86014219d9023450d11d285e9ac08b1ff84000013fffffffb7bec78040400400017200040c0d01466d0388002200
+	dir:DOWN_LINK
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:674
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 129 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 131 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 102 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 92 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 247 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 91 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 531 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 153 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/ULP/SUPLPOS
+	dataType:ULP
+	data:0037020000c0004008c41800004fe7fc418002090be3ad71073e33068d3242005900025a002f6508611769a61d6e7d1e3c15680a020000
+	dir:UP_LINK
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:692
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/ULP/SUPLEND
+	dataType:ULP
+	data:0039020000c0004008c41800004fe7fc418002090be3ad71073e33068d32540358b760d583462c59b862ded39769a61d6e7d1e3c156801b448
+	dir:DOWN_LINK
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:703
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/ULP/ULP-TAOffset
+	dataType:XML
+	data:487.5
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:704
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/ULP/ConcurrentSession
+	dataType:XML
+	data:FALSE
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:704
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/ULP/CellData
+	dataType:XML
+	data:086,28,1,6165,Aa,7,5230,5230,32.924094,-97.223639,100,200,60,0,No,8,No,46.5,0,4800,32.947945,-97.223162,100,0,1,6,2,1,1,Normal (short),100,Yes,,0,Macro
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:705
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/ULP/PosMethod
+	dataType:XML
+	data:MSB-LPP-AGPS
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:705
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/ULP/RefLocation
+	dataType:XML
+	data:
+<latitudeSign>north</latitudeSign>
+<latitude>3068748</latitude>
+<longitude>-4530950</longitude>
+<uncertainty>
+<uncertaintySemiMajor>30</uncertaintySemiMajor>
+<uncertaintySemiMinor>30</uncertaintySemiMinor>
+<orientationMajorAxis>10</orientationMajorAxis>
+</uncertainty>
+<confidence>90</confidence>
+<altitudeInfo>
+<altitudeDirection>height</altitudeDirection>
+<altitude>218</altitude>
+<altUncertainty>18</altUncertainty>
+</altitudeInfo>
+
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:705
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/ULP/MSB-Call-Parameter
+	dataType:XML
+	data:
+<MSB-MAR-Corroboration-Factor>0</MSB-MAR-Corroboration-Factor>
+
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:705
+}
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 108 bytes
+2017-05-04 11:38:17.709 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Misc/SuplPush/IPAddress
+	dataType:XML
+	data:10.68.96.43
+	dir:UNKNOWN
+	endFlag:1
+	seconds:1493897897
+	milliSeconds:705
+}
+2017-05-04 11:38:17.828 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 732 bytes
+2017-05-04 11:38:17.828 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/CandidatePosition/PositionResult
+	dataType:XML
+	data:
+<PosTime>2017-05-04T11:38:17Z</PosTime>
+<PosMethod>ECI</PosMethod>
+<LocationEstimate>
+<EllipsoidPointWithAltitudeAndUncertaintyEllipsoid>
+  <Latitude>
+    <Sign>North</Sign>
+    <Value>3070304</Value>
+  </Latitude>
+  <Longitude>-4530934</Longitude>
+  <Altitude>
+    <Direction>Height</Direction>
+    <Value>215</Value>
+  </Altitude>
+  <UncertaintySemiMajor>54</UncertaintySemiMajor>
+  <UncertaintySemiMinor>54</UncertaintySemiMinor>
+  <MajorAxisOrientation>0</MajorAxisOrientation>
+  <UncertaintyAltitude>34</UncertaintyAltitude>
+  <Confidence>90</Confidence>
+</EllipsoidPointWithAltitudeAndUncertaintyEllipsoid>
+</LocationEstimate>
+
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:735
+}
+2017-05-04 11:38:17.828 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 761 bytes
+2017-05-04 11:38:17.828 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 676 bytes
+2017-05-04 11:38:17.828 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/CandidatePosition/PositionResult
+	dataType:XML
+	data:
+<PosTime>2017-05-04T11:38:17Z</PosTime>
+<PosMethod>MSB-LPP-AGPS</PosMethod>
+<LocationEstimate>
+<EllipsoidPointWithAltitudeAndUncertaintyEllipsoid>
+  <Latitude>
+    <Sign>North</Sign>
+    <Value>3068748</Value>
+  </Latitude>
+  <Longitude>-4530950</Longitude>
+  <Altitude>
+    <Direction>Height</Direction>
+    <Value>218</Value>
+  </Altitude>
+  <UncertaintySemiMajor>30</UncertaintySemiMajor>
+  <UncertaintySemiMinor>30</UncertaintySemiMinor>
+  <MajorAxisOrientation>10</MajorAxisOrientation>
+  <UncertaintyAltitude>18</UncertaintyAltitude>
+  <Confidence>90</Confidence>
+</EllipsoidPointWithAltitudeAndUncertaintyEllipsoid>
+</LocationEstimate>
+
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:735
+}
+2017-05-04 11:38:17.828 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Positioning/KeyLogic
+	dataType:XML
+	data:
+<TrafficDescription MSID="2013600000319">
+[Last cache check by using value:hsscache26443B89657F4913A7CA0D25FE9C6B53-pos] ---->
+[can not find any data in last cache] ---->
+[try to query MME name by (MSISDN-icache:2013600000319) from LRR] ---->
+[Because ip(10.68.96.43) or imsi() are existed, will query the location method directly] ---->
+[get loc_method_seq(U) by using mnc[N/A], mcc [N/A], iptype[4], ipmask [ALL], loc_type[255], subtype[0], horacc[255], lcsclientname[]] ---->
+[EME_LIR start an userplane request] ---->
+[Location Succeed, the result can refer to MLP response]
+</TrafficDescription>
+
+	dir:UNKNOWN
+	endFlag:0
+	seconds:1493897897
+	milliSeconds:736
+}
+2017-05-04 11:38:17.829 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 834 bytes
+2017-05-04 11:38:17.829 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.TLRMsgDecoder - try to read a TLR message package with 48 bytes
+2017-05-04 11:38:17.829 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:Trans/Messages/MLP/EME_LIA
+	dataType:XML
+	data:
+<svc_result ver="3.3.0">
+  <eme_lia ver="3.3.0">
+    <eme_pos pos_method="A-GPS" result_type="FINAL">
+      <msid type="MSISDN" enc="ASC">2013600000319</msid>
+      <pd>
+        <time utc_off="+0000">20170504113817</time>
+        <shape>
+          <CircularArea srsName="www.epsg.org#4326">
+            <coord>
+              <X>32 55 26.738N</X>
+              <Y>97 13 25.100W</Y>
+            </coord>
+            <radius>165</radius>
+          </CircularArea>
+        </shape>
+        <alt>218</alt>
+        <alt_unc>26</alt_unc>
+        <lev_conf>90</lev_conf>
+        <qos_not_met/>
+      </pd>
+    </eme_pos>
+    <NSN_CellIdentity>
+      <NSN_utran-cell-id-3gpp>08628028e0001815</NSN_utran-cell-id-3gpp>
+    </NSN_CellIdentity>
+  </eme_lia>
+</svc_result>
+
+	dir:UP_LINK
+	endFlag:3
+	seconds:1493897897
+	milliSeconds:736
+}
+2017-05-04 11:38:17.829 [nioEventLoopGroup-3-1] [Debug] com.nokia.nls.tlr.Server - receive tlr msg:TLRMsg {
+	trandId:LE1F28705041138170FC
+	xPath:
+	dataType:XML
+	data:
+	dir:UNKNOWN
+	endFlag:1
+	seconds:1493897897
+	milliSeconds:738
+}
+2017-05-04 11:38:21.731 [Thread-7] [Info] com.nokia.nls.tlr.TLRMsgDecoder - try to fetch tlr msg from redis.
