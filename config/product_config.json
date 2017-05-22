@@ -7,5 +7,12 @@
     "password" : "mluser123",
     "src_dir" : "/data/logs",
     "dst_dir" : "../data/",
-    "protocol" : "scp"
+    "protocol" : "scp",
+    "path_prefix" : "M_Vz_",
+    "case_report_prefix" : "test_M_Vz_",
+    "process_list" : "CenterDriver,fis_proxy,dia_proxy,slg,gap_mn,td_proxy",
+    "read_logs" : {
+	"log_type" : "failure|error",
+	"log_url" : "htttp:url"
+    }
 }

@@ -11,7 +11,6 @@ from tensorflow.python.platform import gfile
 
 class DFCreator():
     def get_file_list(self, log_dir):
-
         extensions = ['log','LOG']
         if not gfile.Exists(log_dir):
             print("Log directory '" + log_dir + "' not found.")
@@ -40,12 +39,12 @@ class DFCreator():
                 }
         return case_list
 
-    def log2_dataframe(self, case_list):
+    def log2_dataframe(self, case_list, process_list):
         proc_count = len(case_list.keys())
         if proc_count == 0:
             print ('No process log found at')
             return -1
-        proc_list = ['CenterDriver','fis_proxy','dia_proxy', 'slg','gap_mn']
+        proc_list = process_list.split(',')
         log_df = pd.DataFrame(columns=proc_list)
         log_proc = pd.DataFrame(columns=['case'])
         count = 0
@@ -67,24 +66,15 @@ class DFCreator():
                             log_proc.loc[count] = [dir_name]
             count = count + 1
         log_df['case_id'] = log_proc.case
-        print ('Number of logs read into data frame: %d' %(len(log_proc.index)))
-        print ('The name of the data frame %s' %(log_df.shape,))
-        print log_df.columns
+       # print ('Number of logs read into data frame: %d' %(len(log_proc.index)))
+       # print ('The name of the data frame %s' %(log_df.shape,))
+       # print log_df.columns
+        log_df.set_index(['case_id'], inplace=True)
         return log_df
-        '''
-            with open (file) as f:
-                each_log = ''
-                log_dict = {}
-                for each_line in f:
-                    each_log = each_log + each_line
-                base = os.path.basename(file)
-                procid = os.path.splitext(base)[0]
-                log_df.loc[count] = [each_log, procid]
-                count = count+1
-        '''
         #print ('Number of logs read into data frame: %d' %(len(log_df.index)))
-        #return log_df
 
-df_creator = DFCreator()
-case_list = df_creator.get_file_list('../data/logs/')
-df_creator.log2_dataframe(case_list)
+#loader = ConfigLoader()
+#config = loader.load_config('./config/product_config.json')
+#df_creator = DFCreator()
+#case_list = df_creator.get_file_list('../data/logs/')
+#df_creator.log2_dataframe(case_list, config.get_processlist())
