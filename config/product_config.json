@@ -1,13 +1,27 @@
 {
     "product" : "location",
     "logtype" : "daily_ta",
-    "server" : "192.168.121.120",
-    "port" : "22",
-    "username" : "mluser",
-    "password" : "mluser123",
-    "src_dir" : "/data/logs",
-    "dst_dir" : "../data/",
-    "protocol" : "scp",
+    "servers" : [
+     {
+     "name": "0_NLS170E911TestsServer1",
+     "server" : "192.168.121.120",
+     "port" : "23",
+     "username" : "mluser",
+     "password" : "mluser123",
+      "src_dir" : "/data/logs",
+     "log_path" : "share folder path of report"
+      },
+      {
+      "name": "1_NLS170E911TestsServer2",
+      "server" : "192.168.121.120",
+      "port" : "22",
+      "username" : "mluser",
+      "password" : "mluser123",
+      "src_dir" : "/data/logs",
+      "log_path" : " share folder path of report "
+      }
+    ],
+    "dst_dir" : "./data",
     "path_prefix" : "M_Vz_",
     "case_report_prefix" : "test_M_Vz_",
     "process_list" : "CenterDriver,fis_proxy,dia_proxy,slg,gap_mn,td_proxy",

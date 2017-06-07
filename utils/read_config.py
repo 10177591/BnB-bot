@@ -21,6 +21,9 @@ class Config():
     def get_product(self):
          return self.product
 
+    def get_servers(self):
+        return self.servers
+    
     def get_serverip(self):
         return self.server
 
@@ -34,13 +37,10 @@ class Config():
         return self.password
 
     def get_srcdir(self):
-        return self.srcdir
+        return self.src_dir
 
     def get_dstdir(self):
-        return self.dstdir
-
-    def get_protocol(self):
-        return self.protocol
+        return self.dst_dir
 
     def get_path_prefix(self):
         return self.path_prefix
@@ -59,7 +59,7 @@ class Config():
     
     def get_logurl(self):
         return self.read_logs.log_url
-    
+
 class ConfigLoader (object):
     '''
         Create a confiuration loaded which can read JSON config files
@@ -69,8 +69,8 @@ class ConfigLoader (object):
             config = json.load(data_file, object_hook=Config.from_dict)
         return config
 
-#loader = ConfigLoader()
-#config = loader.load_config('../config/product_config.json')
+loader = ConfigLoader()
+config = loader.load_config('../config/product_config.json')
 
-#print config.get_logurl()
-#print config.get_processlist()
+print config.get_servers()
+print config.get_processlist()
