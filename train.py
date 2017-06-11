@@ -6,7 +6,9 @@
 import pandas as pd
 import numpy as np
 import math
+import argparse
 import re
+import sys
 from utils.log2_df import DFCreator
 from utils.read_config import ConfigLoader
 from nltk import word_tokenize
@@ -65,7 +67,7 @@ def keep_nwords(log):
     e_sw = stopwords.words('english')
     texts = [word for word in word_tokenize(log.lower().decode('utf-8')) if word not in e_sw]
     items = texts[0:500]
-    log_begin = ' '.join(map(str, items))
+    log_begin = ' '.join(map(unicode, items))
     return log_begin
 
 def keep_impwords(log):
@@ -73,15 +75,16 @@ def keep_impwords(log):
     texts = [word for word in word_tokenize(log.lower().decode('utf-8')) if word not in e_sw]
     texts = [impword(word) for word in texts if not hasNumbers(word)]
     items = texts[0:]
-    log_imp = ''.join(map(str, items))
+    log_imp = ''.join(map(unicode, items))
     return log_imp
 
 def keep_alpha(log):
     e_sw = stopwords.words('english')
-    texts = [word for word in word_tokenize(log.lower().decode('utf-8')) if word not in e_sw]
+    # CHange the decode to latin-1 as UTF-8 is throwing exception
+    texts = [word for word in word_tokenize(log.lower().decode('latin-1')) if word not in e_sw]
     texts = [word for word in texts if not hasNumbers(word)]
     items = texts[0:]
-    log_imp = ' '.join(map(str, items))
+    log_imp = ' '.join(map(unicode, items))
     return log_imp
 
 def hasNumbers(str):
@@ -93,28 +96,41 @@ def impword(w):
         return w+' '
     else:
         return ''
+    
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--p_level',
+        type=str,
+        default='case',
+        help='Predict cases bug or process bug'
+    )
+    FLAGS, unparsed = parser.parse_known_args()
+    #Load the configurations
+    loader = ConfigLoader()
+    config = loader.load_config('./config/product_config.json')
 
-'''
-Load the configurations
-'''
-loader = ConfigLoader()
-config = loader.load_config('./config/product_config.json')
+    #Read the logs and convert them into dataframe
+    df_creator = DFCreator()
+    case_list = df_creator.get_file_list(config.get_dstdir())
+    input_df = df_creator.log2_dataframe(case_list, config.get_processlist(),FLAGS.p_level)
 
-'''
-Read the logs and convert them into dataframe
-'''
-df_creator = DFCreator()
-case_list = df_creator.get_file_list(config.get_dstdir())
-input_df = df_creator.log2_dataframe(case_list, config.get_processlist())
+    if input_df is None:
+        print 'Input dataframe from log2_df is null'
+        sys.exit(-1)
 
-# Replace the NaN with 'empty'
-input_df[input_df.isnull()] = 'empty'
+    if FLAGS.p_level == 'case':
+    # Replace the NaN with 'empty'
+        input_df[input_df.isnull()] = 'empty'
 
-wcount_df = feature_wcount('wcount', input_df)
-expcount_df = feature_wcount('expcount', input_df)
-dbgcount_df = feature_wcount('dbgcount', input_df)
-expcount_df = feature_wcount('expcount', input_df)
-print wcount_df.head(4)
-#print expcount_df
-#print dbgcount_df
-input_df.applymap(keep_alpha)
+        wcount_df = feature_wcount('wcount', input_df)
+        expcount_df = feature_wcount('expcount', input_df)
+        dbgcount_df = feature_wcount('dbgcount', input_df)
+        expcount_df = feature_wcount('expcount', input_df)
+        print wcount_df
+        #print expcount_df
+        #print dbgcount_df
+        # keep alpha create a df will contains only alphabets
+        input_df.applymap(keep_alpha)
+    elif FLAGS.p_level == 'process':
+        print len(input_df)
