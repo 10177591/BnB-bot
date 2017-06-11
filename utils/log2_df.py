@@ -11,7 +11,7 @@ from read_config import ConfigLoader
 
 class DFCreator():
     def get_file_list(self, log_dir):
-        extensions = ['log','LOG']
+        extensions = ['log','LOG','nm']
         if not gfile.Exists(log_dir):
             print("Log directory '" + log_dir + "' not found.")
             return None
@@ -30,7 +30,7 @@ class DFCreator():
                continue
             #print("Looking for logs in '" + dir_name + "'")
             for extension in extensions:
-                file_glob = os.path.join(log_dir, dir_name, '*.' + extension + "*")
+                file_glob = os.path.join(log_dir, dir_name, '*' + extension + "*")
                 file_list.extend(gfile.Glob(file_glob))
             if not file_list:
                # print('No files found')
@@ -52,7 +52,7 @@ class DFCreator():
         log_proc = pd.DataFrame(columns=['case','date'])
         count = 0
         for dir_name, file_lists in case_list.items():
-            print dir_name
+           # print dir_name
             file_list = file_lists['list']
             for file in file_list:
                 base = os.path.basename(file)
@@ -76,12 +76,13 @@ class DFCreator():
        # print ('Number of logs read into data frame: %d' %(len(log_proc.index)))
        # print ('The size of the data frame %s' %(log_df.shape,))
        # print log_df.columns
+        print log_df.loc[:, 'lppserver_LPP']
         log_df.set_index(['date','case'], inplace=True)
         return log_df
         #print ('Number of logs read into data frame: %d' %(len(log_df.index)))
 
-#loader = ConfigLoader()
-#config = loader.load_config('../config/product_config.json')
-#df_creator = DFCreator()
-#file_list = df_creator.get_file_list('../data/')
-#df_creator.log2_dataframe(file_list, config.get_processlist())
+loader = ConfigLoader()
+config = loader.load_config('../config/product_config.json')
+df_creator = DFCreator()
+file_list = df_creator.get_file_list('../data/')
+df_creator.log2_dataframe(file_list, config.get_processlist())

@@ -72,5 +72,5 @@ class ConfigLoader (object):
 loader = ConfigLoader()
 config = loader.load_config('../config/product_config.json')
 
-print config.get_servers()
-print config.get_processlist()
+#print config.get_servers()
+#print config.get_processlist()

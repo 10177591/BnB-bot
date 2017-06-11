@@ -24,7 +24,7 @@
     "dst_dir" : "./data",
     "path_prefix" : "M_Vz_",
     "case_report_prefix" : "test_M_Vz_",
-    "process_list" : "CenterDriver,fis_proxy,dia_proxy,slg,gap_mn,td_proxy",
+    "process_list" : "spu,RRLP,UEDriver,tlr,LPP,glc_nm,glc_log,lppserver_LPP,lppserver_ALGO,sls_server",
     "read_logs" : {
 	"log_type" : "failure|error",
 	"log_url" : "htttp:url"
