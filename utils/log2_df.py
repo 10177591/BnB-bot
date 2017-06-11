@@ -40,52 +40,9 @@ class DFCreator():
                 }
         return case_list
 
-    def log2_manydf(self, case_list, process_list):
-        proc_count = len(case_list)
-        if proc_count == 0:
-            print ('No process log found at')
-            return -1
-        proc_list = process_list.split(',')
-        proc_list.insert(0,'date')
-        proc_list.insert(1,'case')
-        log_df = pd.DataFrame(columns=proc_list)
-        log_proc = pd.DataFrame(columns=['case','date'])
-        count = 0
-        proc_dfs = {}
-        for dir_name, file_lists in case_list.items():
-           # print dir_name
-            file_list = file_lists['list']
-            for file in file_list:
-                base = os.path.basename(file)
-                dirname =  os.path.dirname(file)
-                base1 = re.search(r'(.*)\/(.*)\/(.*)', dirname).group(3)
-                base2 = re.search(r'(.*)\/(.*)\/(.*)', dirname).group(2)
-                #print base1 + "_" + base2
-                proc_name = os.path.splitext(base)[0]
-                name = re.search(r'(\w+)',proc_name)
-                if name is not None:
-                    proc = name.group(1)
-                    if proc in proc_list:
-                        with open(file) as f:
-                            each_log = ''
-                            for each_line in f:
-                                each_log = each_log + each_line
-                            log_df.set_value(count, proc, each_log)
-                log_df.set_value(count, 'date', base2)
-                log_df.set_value(count, 'case', base1)
-            count = count + 1
-       # print ('Number of logs read into data frame: %d' %(len(log_proc.index)))
-       # print ('The size of the data frame %s' %(log_df.shape,))
-       # print log_df.columns
-        #log_df.set_index(['date','case'], inplace=True)
-        #print log_df.head(4)
-        for proc in process_list.split(','):
-            log_new = log_df.loc[:,['date','case', proc]]
-            log_new.set_index(['date','case'], inplace=True)
-            print log_new
-            proc_dfs[proc] = log_new
-        return proc_dfs   
-        
+    '''
+    Get the file names and process list and create one df or multiple dataframes
+    '''
     def log2_dataframe(self, case_list, process_list,df_type):
         proc_count = len(case_list)
         if proc_count == 0:
@@ -120,13 +77,15 @@ class DFCreator():
             log_df.set_value(count, 'date', base2)
             log_df.set_value(count, 'case', base1)
             count = count + 1
-       # print ('Number of logs read into data frame: %d' %(len(log_proc.index)))
-       # print ('The size of the data frame %s' %(log_df.shape,))
        # print log_df.columns
         if df_type == 'case':
             log_df.set_index(['date','case'], inplace=True)
             return log_df
         elif df_type == 'process':
+            '''
+            If the argument is process, create one dataframe for each process
+            and returns a dictionary of data frames
+            '''
             for proc in process_list.split(','):
                 log_new = log_df.loc[:,['date','case', proc]]
                 log_new.set_index(['date','case'], inplace=True)
